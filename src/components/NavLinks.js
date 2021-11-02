@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
+import BeachAccessIcon from "@material-ui/icons/BeachAccess";
+import "./NavLink.css";
 
 function NavLink() {
   return (
     <div>
-      <header>
-        <div>
-          <h1>TripPH</h1>
+      <header className="header">
+        <div className="title">
+          <Link to="/">
+            <BeachAccessIcon className="svg" /> TripPH
+          </Link>
         </div>
         <nav>
           <ul>
