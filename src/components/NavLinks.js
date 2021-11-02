@@ -1,30 +1,32 @@
 import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 import BeachAccessIcon from "@material-ui/icons/BeachAccess";
 import "./NavLink.css";
 
 function NavLink() {
   return (
     <div>
-      <header className="header">
-        <div className="title">
+      <Navbar className="header" bg="light" expand="lg">
+        <div>
           <Link to="/">
             <BeachAccessIcon className="svg" /> TripPH
           </Link>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/hotels">Hotels</Link>
-            </li>
-            <li>
-              <Link to="/adventure">Adventure</Link>
-            </li>
-            <li>
-              <Link to="/restaurant">Restaurant</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link className="ltext" as={Link} to="/hotels">
+              Hotels
+            </Nav.Link>
+            <Nav.Link className="ltext" as={Link} to="/adventure">
+              Adventure
+            </Nav.Link>
+            <Nav.Link className="ltext" as={Link} to="/restaurant">
+              Restaurant
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   );
 }

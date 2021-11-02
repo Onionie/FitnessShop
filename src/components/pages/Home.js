@@ -1,4 +1,5 @@
 import CloseIcon from "@material-ui/icons/Close";
+import "./Home.css";
 
 function Home() {
   return (

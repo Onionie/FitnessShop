@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
+import NavLinks from "./NavLinks";
 
-import NavLink from "./NavLinks";
 import Home from "./pages/Home";
 import Adventure from "./pages/Adventure";
 import Hotels from "./pages/Hotels";
@@ -8,9 +8,9 @@ import Restaurant from "./pages/Restaurant";
 
 function NavBar() {
   return (
-    <div className="navbar">
-      <NavLink />
-      <Switch>
+    <div>
+      <NavLinks />
+      <Switch path="/">
         <Route path="/" exact>
           <Home />
         </Route>
