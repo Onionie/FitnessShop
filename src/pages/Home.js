@@ -1,4 +1,3 @@
-import CloseIcon from "@material-ui/icons/Close";
 import HomeComp from "../components/HomeComp";
 
 function Home() {
