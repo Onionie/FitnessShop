@@ -4,15 +4,10 @@ import "./HomeComp.css";
 function HomeComp(props) {
   return (
     <div className="rectangle">
-      <Image
-        className="rectangle"
-        src="https://cdn.suwalls.com/wallpapers/beaches/palawan-island-resort-philippines-28615-1920x1080.jpg"
-        alt="hotel-beach"
-        fluid
-      ></Image>
+      <Image src={props.imageSrc} alt={props.altName} fluid></Image>
       <div className="center">
-        <h1>Enjoy</h1>
-        <h2>Your Stay</h2>
+        <h1>{props.heading1}</h1>
+        <h2>{props.heading2}</h2>
       </div>
     </div>
   );

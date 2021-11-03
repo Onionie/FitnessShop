@@ -15,14 +15,14 @@ function NavLink() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="ltext" as={Link} to="/hotels">
-              Hotels
-            </Nav.Link>
             <Nav.Link className="ltext" as={Link} to="/adventure">
               Adventure
             </Nav.Link>
             <Nav.Link className="ltext" as={Link} to="/restaurant">
               Restaurant
+            </Nav.Link>
+            <Nav.Link className="ltext" as={Link} to="/hotels">
+              Hotels
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

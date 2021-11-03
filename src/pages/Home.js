@@ -5,7 +5,12 @@ import "./Home.css";
 function Home() {
   return (
     <div>
-      <HomeComp />
+      <HomeComp
+        imageSrc="https://cdn.suwalls.com/wallpapers/beaches/palawan-island-resort-philippines-28615-1920x1080.jpg"
+        altName="hotel-beach"
+        heading1="Enjoy"
+        heading2="Your Stay"
+      />
       <h1>
         Home <CloseIcon />
       </h1>
