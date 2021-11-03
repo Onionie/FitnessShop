@@ -1,14 +1,19 @@
 h1 {
   text-align: center;
-  font-size: 8vw;
-}
-
-h2 {
   font-size: 6vw;
 }
 
-.rectangle {
+h2 {
+  text-align: center;
+  font-size: 4vw;
+}
+
+.parent {
   position: relative;
+}
+
+.rectangle {
+  width: 100%;
 }
 
 .center {

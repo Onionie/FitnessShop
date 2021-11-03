@@ -6,7 +6,7 @@ import "./NavLink.css";
 function NavLink() {
   return (
     <div>
-      <Navbar className="header" bg="dark" expand="lg">
+      <Navbar className="header" bg="dark" expand="lg" fixed="top">
         <div className="title">
           <Link to="/">
             <BeachAccessIcon className="svg" /> TripPH
