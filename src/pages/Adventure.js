@@ -1,11 +1,10 @@
-import { Container } from "react-bootstrap";
 import AdventureComp from "../components/AdventureComp";
 
 function Adventure() {
   return (
-    <Container>
+    <div>
       <AdventureComp />
-    </Container>
+    </div>
   );
 }
 
