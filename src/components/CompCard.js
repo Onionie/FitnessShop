@@ -6,7 +6,7 @@ function CompCard(props) {
       <Card border="info" style={{ width: "25rem", marginTop: "5%" }}>
         <Card.Img variant={props.bsVariant} src={props.imgSrc} />
         <Card.Body>
-          <Card.Title>El Nido Marine Reserve Park</Card.Title>
+          <Card.Title>{props.title}</Card.Title>
           <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
