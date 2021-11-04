@@ -24,4 +24,8 @@ h2 {
   color: #ffffff;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
   font-family: "Yeseva One";
+  border: 10px;
+  border-style: double;
+  border-color: white;
+  padding: 4em;
 }
