@@ -14,7 +14,9 @@ function HomeComp(props) {
       <div className="center">
         <h1>{props.heading1}</h1>
         <h2>{props.heading2}</h2>
-        <Button />
+        <div className="buttondiv">
+          <Button />
+        </div>
       </div>
     </div>
   );

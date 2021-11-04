@@ -3,13 +3,9 @@ import "./Button.css";
 
 function Button() {
   return (
-    <div className="container">
-      <div className="veritcal-center">
-        <button>
-          <ArrowForwardIcon />
-        </button>
-      </div>
-    </div>
+    <button>
+      <ArrowForwardIcon />
+    </button>
   );
 }
 
