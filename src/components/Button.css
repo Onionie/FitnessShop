@@ -1,0 +1,18 @@
+button {
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: transparent;
+  min-height: 50px;
+  width: 50px;
+  color: white;
+  left: 50%;
+}
+
+.vertical-center {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+}

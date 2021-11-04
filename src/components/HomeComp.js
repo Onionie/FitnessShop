@@ -1,4 +1,5 @@
 import Image from "react-bootstrap/Image";
+import Button from "./Button.js";
 import "./HomeComp.css";
 
 function HomeComp(props) {
@@ -13,6 +14,7 @@ function HomeComp(props) {
       <div className="center">
         <h1>{props.heading1}</h1>
         <h2>{props.heading2}</h2>
+        <Button />
       </div>
     </div>
   );
