@@ -15,7 +15,7 @@ function HomeComp(props) {
         <h1>{props.heading1}</h1>
         <h2>{props.heading2}</h2>
         <div className="buttondiv">
-          <Button />
+          <Button link={props.pageTag} />
         </div>
       </div>
     </div>

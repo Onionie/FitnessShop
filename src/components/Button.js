@@ -3,14 +3,10 @@ import { Link } from "react-router-dom";
 import "./Button.css";
 
 function Button(props) {
-  const clickHandler = () => {
-    <Link to={props.} ></Link>
-  };
-
   return (
-    <button onClick={clickHandler}>
-      <ArrowForwardIcon />
-    </button>
+    <Link to={props.link} className="btn button">
+      <ArrowForwardIcon className="arrow" />
+    </Link>
   );
 }
 

@@ -1,12 +1,14 @@
-button {
-  border: 2px solid #3db2ff;
-  border-radius: 50%;
+.button {
   background-color: transparent;
   min-height: 50px;
   width: 50px;
   color: white;
 }
 
-button:hover {
+.arrow:hover {
   color: #3db2ff;
+}
+
+.arrow {
+  transform: scale(2);
 }
