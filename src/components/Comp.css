@@ -1,0 +1,10 @@
+.comp h1 {
+  font-family: "Lobster";
+  font-size: 3.5rem;
+  color: black;
+}
+
+.style {
+  margin: 2% 5%;
+  align-items: center;
+}
