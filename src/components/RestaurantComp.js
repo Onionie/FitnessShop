@@ -6,7 +6,7 @@ import "./Comp.css";
 function RestaurantComp() {
   return (
     <div className="comp">
-      <h1>RESTAURANT</h1>
+      <h1>RESTAURANTS</h1>
       <Row className="style" xs={1} md={2} lg={3}>
         <CompCard
           imgSrc="https://www.travel-palawan.com/wp-content/uploads/2018/09/ka-lui-restaurant-300x205.jpg"
