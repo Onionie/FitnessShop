@@ -1,7 +1,11 @@
+import HotelsComp from "../components/HotelsComp";
+import ScrollToTopOnMount from "../components/ScrollToTopMount";
+
 function Hotels() {
   return (
     <div>
-      <h1>HOTELS</h1>
+      <ScrollToTopOnMount />
+      <HotelsComp />
     </div>
   );
 }
