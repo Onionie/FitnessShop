@@ -1,14 +1,22 @@
-import CompCard from "./CompCard";
-
+//import CompCard from "./CompCard";
+import RefactorCard from "./RefactorComp";
 import { Row } from "react-bootstrap";
 import "./Comp.css";
+import AdventureData from "../data/AdventurePageData";
 
 function AdventureComp() {
   return (
     <div className="comp">
       <h1>ADVENTURES</h1>
       <Row className="style" xs={1} md={2} lg={3}>
-        <CompCard
+        {AdventureData.map((data) => {
+          <RefactorCard
+            imgSrc={data.image}
+            title={data.title}
+            cText={data.description}
+          />;
+        })}
+        {/* <CompCard
           imgSrc="https://a.cdn-hotels.com/gdcs/production87/d1048/4ed1a1e8-afa7-4640-b8ca-d1d6ccbb54c1.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
           title="El Nido Marine Reserve Park"
           cText="This Marine Reserve Park is popular for its limestone cliffs, 50 beaches, 3 major marine habitats, 5 types of forest, and an abundant fauna and flora including over 20 endemic species."
@@ -52,7 +60,7 @@ function AdventureComp() {
           imgSrc="https://a.cdn-hotels.com/gdcs/production77/d719/5eb61328-dc7b-4c62-b9ec-27703f02d15e.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
           title="Puerto Princesa Subterranean River"
           cText="Puerto Princesa Subterranean River National Park is a protected area located 80 km north of Palawan's capital city. It's one of the world’s most complex cave systems, covering 220 sq km and featuring 8 km of underground rivers. The site has a full mountain-to-sea ecosystem which contains bountiful fauna and flora."
-        />
+        /> */}
       </Row>
     </div>
   );
