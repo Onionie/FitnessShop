@@ -28,28 +28,28 @@ function HotelsComp() {
           cText=""
         />
         <CompCard
-          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/67/18/6718764.jpeg"
-          title="Two Seasons Coron Town Bayside"
+          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/28/04/2804512_v1.jpeg"
+          title="Hotel Busuanga Bay Lodge"
           cText=""
         />
         <CompCard
-          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/60/65/6065768.jpeg"
-          title="Hue S & Resorts Puerto Princesa"
+          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/23/79/2379608.jpeg"
+          title="Holiday Suites"
           cText=""
         />
         <CompCard
-          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/18/11/18112646.jpeg"
-          title="Charlies El Nido"
+          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/26/72/2672628.jpeg"
+          title="Coron Westown Resort"
           cText=""
         />
         <CompCard
-          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/46/77/4677832.jpeg"
-          title="Canvas Boutique"
+          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/12/64/1264945.jpeg"
+          title="Asturias"
           cText=""
         />
         <CompCard
-          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/59/72/5972416_v2.jpeg"
-          title="Munting Paraiso"
+          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/28/18/2818641_v1.jpeg"
+          title="Hotel Aziza Paradise"
           cText=""
         />
       </Row>
