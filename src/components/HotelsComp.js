@@ -8,6 +8,21 @@ function HotelsComp() {
       <h1>HOTELS</h1>
       <Row className="style" xs={1} md={2} lg={3}>
         <CompCard
+          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/21/28/21281356.jpeg"
+          title="The Wellington Courtyard"
+          cText=""
+        />
+        <CompCard
+          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/27/62/2762974_v1.jpeg"
+          title="Two Seasons Coron Island Resort"
+          cText=""
+        />
+        <CompCard
+          imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/63/00/6300140.jpeg"
+          title="Casa Kalaw"
+          cText=""
+        />
+        <CompCard
           imgSrc="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/99/10/991099.jpeg"
           title="Sangat Island Reserve"
           cText=""
