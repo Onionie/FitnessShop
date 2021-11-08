@@ -3,7 +3,7 @@ import { Row } from "react-bootstrap";
 import "./Comp.css";
 import AdventureData from "../data/AdventurePageData.json";
 
-function AdventureComp() {
+function BookingComp() {
   return (
     <div className="comp">
       <h1>BOOKING</h1>
@@ -12,4 +12,4 @@ function AdventureComp() {
   );
 }
 
-export default AdventureComp;
+export default BookingComp;
