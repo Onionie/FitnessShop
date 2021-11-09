@@ -1,6 +1,7 @@
 import Image from "react-bootstrap/Image";
-import Button from "./Button.js";
 import "./HomeComp.css";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import { Link } from "react-router-dom";
 
 function HomeComp(props) {
   return (
@@ -15,7 +16,9 @@ function HomeComp(props) {
         <h1>{props.heading1}</h1>
         <h2>{props.heading2}</h2>
         <div className="buttondiv">
-          <Button link={props.pageTag} />
+          <Link to={props.pageTag} className="btn button">
+            <ArrowForwardIcon className="arrow" />
+          </Link>
         </div>
       </div>
     </div>
