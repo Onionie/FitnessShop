@@ -24,12 +24,6 @@ function NavLink() {
             <Nav.Link className="ltext" as={Link} to="/hotels">
               Hotels
             </Nav.Link>
-            <Nav.Link className="ltext" as={Link} to="/booking">
-              Booking
-              <Badge pill bg="danger">
-                0
-              </Badge>
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

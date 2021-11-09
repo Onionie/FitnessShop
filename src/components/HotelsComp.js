@@ -9,11 +9,11 @@ function HotelsComp() {
     <div className="comp">
       <h1>HOTELS</h1>
       <Row className="style" xs={1} md={2} lg={3}>
-        {HotelsData.map((item) => (
+        {HotelsData.map((data) => (
           <CompCard
-            imgSrc={item.image}
-            title={item.title}
-            cText={item.description}
+            imgSrc={data.image}
+            title={data.title}
+            cText={data.description}
           />
         ))}
       </Row>

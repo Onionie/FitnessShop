@@ -5,7 +5,6 @@ import Home from "../pages/Home";
 import Adventure from "../pages/Adventure";
 import Hotels from "../pages/Hotels";
 import Restaurant from "../pages/Restaurant";
-import Booking from "../pages/Booking";
 
 function NavBar() {
   return (
@@ -23,9 +22,6 @@ function NavBar() {
         </Route>
         <Route path="/restaurant">
           <Restaurant />
-        </Route>
-        <Route path="/booking">
-          <Booking />
         </Route>
       </Switch>
     </div>
