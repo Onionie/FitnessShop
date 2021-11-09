@@ -4,7 +4,7 @@ A single-page application (SPA) about tropical adventure that lets user access d
 
 # Deployment
 
-https://onielg-weather-application.herokuapp.com/
+https://onielg-tripph-react.herokuapp.com/
 
 # Tools Used
 
@@ -16,4 +16,4 @@ https://onielg-weather-application.herokuapp.com/
 
 # Screenshots
 
-<img src = "https://github.com/Onionie/TripPH/tree/main/public/Snapshot/1.PNG">
+<img src = "https://github.com/Onionie/TripPH/blob/main/public/Snapshot/1.PNG">
