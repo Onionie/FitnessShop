@@ -9,11 +9,11 @@ function AdventureComp() {
       <h1>ADVENTURES</h1>
       <Row className="style" xs={1} md={2} lg={3}>
         {/* Using .map function to map through our .json data to make code cleaner */}
-        {AdventureData.map((data) => (
+        {AdventureData.map((item) => (
           <CompCard
-            imgSrc={data.image}
-            title={data.title}
-            cText={data.description}
+            imgSrc={item.image}
+            title={item.title}
+            cText={item.description}
           />
         ))}
       </Row>
