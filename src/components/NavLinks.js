@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Badge } from "react-bootstrap";
 import BeachAccessIcon from "@material-ui/icons/BeachAccess";
 import "./NavLink.css";
 
@@ -23,6 +23,12 @@ function NavLink() {
             </Nav.Link>
             <Nav.Link className="ltext" as={Link} to="/hotels">
               Hotels
+            </Nav.Link>
+            <Nav.Link className="ltext" as={Link} to="/booking">
+              Booking
+              <Badge pill bg="danger">
+                0
+              </Badge>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
