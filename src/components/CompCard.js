@@ -24,12 +24,16 @@ function CompCard(props) {
   return (
     <Col>
       <Card border="info" style={{ width: "25rem", marginTop: "5%" }}>
-        <Card.Img variant="top" src={props.imgSrc} />
-        <Card.Body>
+        <Card.Img className="custom-img" variant="top" src={props.imgSrc} />
+        <Card.Body className="cBody">
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.cText}</Card.Text>
-          <Button variant="info" onClick={toggleFavoriteStatusHandler}>
-            {itemIsFavorite ? "Remove from favorites" : "To Favorites"}
+          <Button
+            className="stick-left"
+            variant="info"
+            onClick={toggleFavoriteStatusHandler}
+          >
+            {itemIsFavorite ? "Remove from Booking" : "Add to Booking"}
           </Button>
         </Card.Body>
       </Card>

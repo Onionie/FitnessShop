@@ -7,3 +7,17 @@
 .style {
   margin: 2% 5%;
 }
+
+.cBody {
+  min-height: 275px;
+}
+
+.stick-left {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.custom-img {
+  max-height: 270px;
+}

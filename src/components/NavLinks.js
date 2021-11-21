@@ -1,9 +1,13 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Badge } from "react-bootstrap";
 import BeachAccessIcon from "@material-ui/icons/BeachAccess";
 import "./NavLink.css";
+import FavoritesContext from "./FavoritesCtx";
 
 function NavLink() {
+  const favoritesCtx = useContext(FavoritesContext);
+
   return (
     <div>
       <Navbar className="header" bg="dark" expand="lg">
@@ -26,6 +30,9 @@ function NavLink() {
             </Nav.Link>
             <Nav.Link className="ltext" as={Link} to="/booking">
               Booking
+              <Badge pill bg="danger">
+                {favoritesCtx.totalFavorites}
+              </Badge>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
