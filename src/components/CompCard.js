@@ -1,4 +1,4 @@
-import { Card, Col } from "react-bootstrap";
+import { Button, Card, Col } from "react-bootstrap";
 
 function CompCard(props) {
   return (
@@ -8,6 +8,7 @@ function CompCard(props) {
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.cText}</Card.Text>
+          <Button variant="info">Add To Favorites</Button>
         </Card.Body>
       </Card>
     </Col>
