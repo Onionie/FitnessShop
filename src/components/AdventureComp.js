@@ -11,6 +11,8 @@ function AdventureComp() {
         {/* Using .map function to map through our .json data to make code cleaner */}
         {AdventureData.map((item) => (
           <CompCard
+            key={item.id}
+            id={item.id}
             imgSrc={item.image}
             title={item.title}
             cText={item.description}

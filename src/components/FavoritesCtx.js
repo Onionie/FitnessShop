@@ -20,10 +20,10 @@ export function FavoritesContextProvider(props) {
     });
   }
 
-  function removeFavoriteHandler(meetupId) {
+  function removeFavoriteHandler(entryId) {
     setUserFavorites((prevUserFavorite) => {
       //Filter method: looks for a meetup where meetup.id is not equal to meetupID
-      return prevUserFavorite.filter((meetup) => meetup.id !== meetupId);
+      return prevUserFavorite.filter((entry) => entry.id !== entryId);
     });
   }
 
@@ -34,6 +34,7 @@ export function FavoritesContextProvider(props) {
   const context = {
     favorites: userFavorites,
     totalFavorites: userFavorites.length,
+    addFavorite: addFavoriteHandler,
     removeFavorite: removeFavoriteHandler,
     itemIsFavorite: itemIsFavoriteHandler,
   };
