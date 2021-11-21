@@ -12,6 +12,8 @@ function RestaurantComp() {
         {/* Using .map function to map through our .json data to make code cleaner */}
         {RestaurantData.map((item) => (
           <CompCard
+            key={item.id}
+            id={item.id}
             imgSrc={item.image}
             title={item.title}
             cText={item.description}
