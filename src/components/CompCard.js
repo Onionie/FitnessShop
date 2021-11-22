@@ -6,18 +6,19 @@ function CompCard(props) {
   const favoritesCtx = useContext(FavoritesContext);
 
   const itemIsFavorite = favoritesCtx.itemIsFavorite(props.id);
-  console.log(itemIsFavorite);
 
+  //If button is clicked, execute this handler
   function toggleFavoriteStatusHandler() {
     if (itemIsFavorite) {
+      //if itemIsFavorite remove favorite
       favoritesCtx.removeFavorite(props.id);
     } else {
+      //else add favorite
       favoritesCtx.addFavorite({
         id: props.id,
         title: props.title,
         description: props.cText,
         image: props.imgSrc,
-        address: props.address,
       });
     }
   }

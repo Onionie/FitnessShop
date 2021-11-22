@@ -5,30 +5,31 @@ const FavoritesContext = createContext({
   favorites: [],
   totalFavorites: 0,
   addFavorite: (favoriteMeetup) => {},
-  removeFavorite: (meetupId) => {},
-  itemIsFavorite: (meetupId) => {},
+  removeFavorite: (entryId) => {},
+  itemIsFavorite: (entryId) => {},
 });
 
 export function FavoritesContextProvider(props) {
   const [userFavorites, setUserFavorites] = useState([]);
 
-  /* favoriteMeetup parameter will be added to initial state prevUserFavorites 
+  /* favoriteEntry parameter will be added to initial state prevFavoriteEntry
   that then will be the new state setUserFavorites */
-  function addFavoriteHandler(favoriteMeetup) {
-    setUserFavorites((prevUserFavorite) => {
-      return prevUserFavorite.concat(favoriteMeetup);
+  function addFavoriteHandler(favoriteEntry) {
+    setUserFavorites((prevFavoriteEntry) => {
+      // console.log(prevFavoriteEntry);
+      return prevFavoriteEntry.concat(favoriteEntry);
     });
   }
 
   function removeFavoriteHandler(entryId) {
-    setUserFavorites((prevUserFavorite) => {
-      //Filter method: looks for a meetup where meetup.id is not equal to meetupID
-      return prevUserFavorite.filter((entry) => entry.id !== entryId);
+    setUserFavorites((prevFavoriteEntry) => {
+      //Filter method: looks for an entry where entry.id is not equal to entryID
+      return prevFavoriteEntry.filter((entry) => entry.id !== entryId);
     });
   }
 
-  function itemIsFavoriteHandler(meetupId) {
-    return userFavorites.some((meetup) => meetup.id === meetupId);
+  function itemIsFavoriteHandler(entryId) {
+    return userFavorites.some((entry) => entry.id === entryId);
   }
 
   const context = {
