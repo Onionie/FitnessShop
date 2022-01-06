@@ -31,6 +31,7 @@
 .ltext {
   font-size: 1.5rem;
   color: black;
+  margin-left: 40px;
 }
 
 .title a:hover {

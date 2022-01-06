@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Badge } from "react-bootstrap";
+import { Navbar, Nav, Badge, NavDropdown } from "react-bootstrap";
 import BeachAccessIcon from "@material-ui/icons/BeachAccess";
 import "./NavLink.css";
 import FavoritesContext from "./FavoritesCtx";
@@ -10,7 +10,7 @@ function NavLink() {
 
   return (
     <div>
-      <Navbar className="header" bg="dark" expand="lg">
+      <Navbar className="header" expand="lg">
         <div className="title">
           <Link to="/">
             <BeachAccessIcon className="svg" /> TripPH
@@ -19,15 +19,17 @@ function NavLink() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="ltext" as={Link} to="/adventure">
-              Adventure
-            </Nav.Link>
-            <Nav.Link className="ltext" as={Link} to="/restaurant">
-              Restaurant
-            </Nav.Link>
-            <Nav.Link className="ltext" as={Link} to="/hotels">
-              Hotels
-            </Nav.Link>
+            <NavDropdown title="Explore" className="ltext">
+              <NavDropdown.Item as={Link} to="/adventure">
+                Adventure
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/restaurant">
+                Restaurant
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/hotels">
+                Hotels
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link className="ltext" as={Link} to="/booking">
               Booking
               <Badge pill bg="danger">
