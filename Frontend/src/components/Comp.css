@@ -1,0 +1,28 @@
+.comp h1 {
+  font-family: "Lobster";
+  font-size: 3.5rem;
+  color: black;
+}
+
+.style {
+  margin: 2% 5%;
+}
+
+.cBody {
+  min-height: 275px;
+}
+
+.stick-left {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.custom-img {
+  max-height: 270px;
+}
+
+.centerText {
+  padding-top: 100px;
+  text-align: center;
+}
