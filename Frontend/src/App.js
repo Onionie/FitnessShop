@@ -14,7 +14,7 @@ function App() {
         <Container>
           <Routes>
             <Route path="/" element={<Home />} exact />
-            <Route path="/accessories" element={<Accessories />} exact />
+            <Route path="/Accessories" element={<Accessories />} exact />
           </Routes>
         </Container>
       </main>
