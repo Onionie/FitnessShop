@@ -1,9 +1,10 @@
 import { Row } from 'react-bootstrap';
 import HomePageComponent from '../components/HomePageComponent';
+import './Home.page.css';
 
 function Home() {
   return (
-    <Row>
+    <Row className="row">
       <HomePageComponent
         className="text-center"
         src="/images/homePage/home_accessories.jpg"
