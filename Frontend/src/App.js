@@ -5,6 +5,7 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Home from './pages/Home.js';
 import Accessories from './pages/Accessories';
+import Equipment from './pages/Equipment';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Container>
           <Routes>
             <Route path="/" element={<Home />} exact />
-            <Route path="/accessories" element={<Accessories />} exact />
+            <Route path="/accessories" element={<Accessories />} />
+            <Route path="/equipment" element={<Equipment />} />
           </Routes>
         </Container>
       </main>
