@@ -1,36 +1,30 @@
 import React from 'react';
-import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const Header = () => {
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
-        <Container>
-          <i
-            class="fas fa-dumbbell fa-2x"
-            style={{ color: 'white', marginRight: '10px' }}
-          ></i>
-          <LinkContainer to="/">
-            <Navbar.Brand>FitnessShop</Navbar.Brand>
-          </LinkContainer>
+        <i
+          class="fas fa-dumbbell fa-2x"
+          style={{ color: 'white', margin: '0 10px' }}
+        ></i>
+        <Link to="/">
+          <Navbar.Brand>FitnessShop</Navbar.Brand>
+        </Link>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <LinkContainer to="/cart">
-                <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i> Cart
-                </Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/login">
-                <Nav.Link>
-                  <i className="fas fa-user"></i> Sign In
-                </Nav.Link>
-              </LinkContainer>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/cart">
+              <i className="fas fa-shopping-cart"></i> Cart
+            </Nav.Link>
+            <Nav.Link as={Link} to="/login">
+              <i className="fas fa-user"></i> Sign In
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </header>
   );

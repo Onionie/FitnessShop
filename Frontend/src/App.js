@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './components/Header.js';
-//import NavBar from './components/Navbar/NavBar';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <Routes>{/* <Route path="/" element={<Header />} exact /> */}</Routes>
         </Container>
       </main>
+      <Footer />
     </Router>
   );
 }
