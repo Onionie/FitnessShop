@@ -12,9 +12,9 @@ function Home() {
       />
       <HomePageComponent
         className="text-center"
-        src="/images/homePage/home_clothing.jpg"
-        title="Clothing"
-        link="/clothing"
+        src="/images/homePage/home_equipment.jpg"
+        title="Home Gym Equipment"
+        link="/equipment"
       />
       <HomePageComponent
         className="text-center"
