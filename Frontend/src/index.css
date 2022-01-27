@@ -1,4 +1,7 @@
-body {
-  font-family: "Yeseva One";
-  margin: 0;
+main {
+  min-height: 80vh;
+}
+
+a {
+  text-decoration: none;
 }

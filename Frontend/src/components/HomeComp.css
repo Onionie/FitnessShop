@@ -8,10 +8,6 @@ h2 {
   font-size: 4vw;
 }
 
-.parent {
-  position: relative;
-}
-
 .rectangle {
   width: 100%;
 }
@@ -23,7 +19,7 @@ h2 {
   transform: translate(-50%, -50%);
   color: #ffffff;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
-  font-family: "Yeseva One";
+  /* font-family: "Yeseva One"; */
   border: 10px;
   border-style: double;
   border-color: white;

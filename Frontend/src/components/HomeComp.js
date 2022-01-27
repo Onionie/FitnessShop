@@ -1,11 +1,11 @@
-import Image from "react-bootstrap/Image";
-import "./HomeComp.css";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import { Link } from "react-router-dom";
+import './HomeComp.css';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import { Col, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function HomeComp(props) {
   return (
-    <div className="parent">
+    <Col className="parent" sm={12} md={6} lg={4} xl={3}>
       <Image
         className="rectangle"
         src={props.imageSrc}
@@ -21,7 +21,7 @@ function HomeComp(props) {
           </Link>
         </div>
       </div>
-    </div>
+    </Col>
   );
 }
 

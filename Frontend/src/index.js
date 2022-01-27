@@ -1,16 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import './bootstrap.min.css';
+import './index.css';
+import App from './App';
 
-import "./index.css";
-import App from "./App";
-import { FavoritesContextProvider } from "./components/FavoritesCtx";
-
-ReactDOM.render(
-  <FavoritesContextProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </FavoritesContextProvider>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById('root'));
