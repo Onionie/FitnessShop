@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
+import Home from './pages/Home.js';
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
       <Header />
       <main className="py-3">
         <Container>
-          <Routes>{/* <Route path="/" element={<Header />} exact /> */}</Routes>
+          <Routes>
+            <Route path="/" element={<Home />} exact />
+          </Routes>
         </Container>
       </main>
       <Footer />
