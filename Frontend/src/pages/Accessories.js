@@ -1,29 +1,20 @@
-import { Row } from 'react-bootstrap';
-import HomePageComponent from '../components/HomePageComponent';
-import './pages.css';
-function Home() {
-  return (
-    <Row className="row">
-      <HomePageComponent
-        className="text-center"
-        src="/images/homePage/home_accessories.jpg"
-        title="Accessories"
-        link="/accessories"
-      />
-      <HomePageComponent
-        className="text-center"
-        src="/images/homePage/home_clothing.jpg"
-        title="Clothing"
-        link="/clothing"
-      />
-      <HomePageComponent
-        className="text-center"
-        src="/images/homePage/home_supps.jpg"
-        title="Supplements"
-        link="/supplements"
-      />
-    </Row>
-  );
-}
+import React from 'react';
+import { Row, Col } from 'react-bootstrap';
+import ProductsComponent from '../components/ProductsComponent';
+import accessoriesProducts from '../data/AccessoriesProducts';
 
-export default Home;
+const HomeScreen = () => {
+  return (
+    <>
+      <Row>
+        {accessoriesProducts.map((product) => (
+          <Col sm={12} md={6} lg={4} xl={4}>
+            <ProductsComponent product={product} />
+          </Col>
+        ))}
+      </Row>
+    </>
+  );
+};
+
+export default HomeScreen;
