@@ -6,6 +6,7 @@ import Footer from './components/Footer.js';
 import Home from './pages/Home.js';
 import Accessories from './pages/Accessories';
 import Equipment from './pages/Equipment';
+import Supplements from './pages/Supplements';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} exact />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/equipment" element={<Equipment />} />
+            <Route path="/supplements" element={<Supplements />} />
           </Routes>
         </Container>
       </main>
