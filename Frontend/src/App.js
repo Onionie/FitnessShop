@@ -7,6 +7,7 @@ import Home from './pages/Home.js';
 import Accessories from './pages/Accessories';
 import Equipment from './pages/Equipment';
 import Supplements from './pages/Supplements';
+import SpecificProduct from './pages/SpecificProduct.js';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/equipment" element={<Equipment />} />
             <Route path="/supplements" element={<Supplements />} />
+            <Route path="/accessories/:id" element={<SpecificProduct />} />
           </Routes>
         </Container>
       </main>
