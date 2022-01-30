@@ -79,4 +79,4 @@ const equipmentProducts = [
   },
 ];
 
-export default equipmentProducts;
+module.exports = equipmentProducts;

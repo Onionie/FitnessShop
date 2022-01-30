@@ -4,7 +4,7 @@
   "description": "MERN e-commerce",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node Backend/server"
   },
   "repository": {
     "type": "git",
