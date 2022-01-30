@@ -10,7 +10,7 @@ const SpecificProduct = () => {
 
   return (
     <div>
-      <Link className="btn btn-dark my-3" to="/">
+      <Link className="btn btn-dark my-3" to="/accessories">
         Go Back
       </Link>
       <Row className="top">
