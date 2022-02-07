@@ -3,13 +3,15 @@ import dotenv from 'dotenv';
 import colors from 'colors';
 
 import connectDB from './config/db.js';
-import accessoriesProducts from './data/AccessoriesProducts.js';
-import equipmentProducts from './data/EquipmentProducts.js';
-import supplementProducts from './data/SupplementsProducts.js';
+import allProducts from './data/allProducts.js';
 
 dotenv.config();
 connectDB();
 const app = express();
+
+const accessoriesProducts = allProducts.filter(
+  (p) => p.category === 'accessories'
+);
 
 app.get('/', (req, res) => {
   res.send('API is running...');
