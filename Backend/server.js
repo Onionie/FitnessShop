@@ -1,9 +1,15 @@
-const express = require('express');
-const app = express();
+import express from 'express';
+import dotenv from 'dotenv';
+import colors from 'colors';
 
-const accessoriesProducts = require('./data/AccessoriesProducts.js');
-const equipmentProducts = require('./data/EquipmentProducts.js');
-const supplementProducts = require('./data/SupplementsProducts.js');
+import connectDB from './config/db.js';
+import accessoriesProducts from './data/AccessoriesProducts.js';
+import equipmentProducts from './data/EquipmentProducts.js';
+import supplementProducts from './data/SupplementsProducts.js';
+
+dotenv.config();
+connectDB();
+const app = express();
 
 app.get('/', (req, res) => {
   res.send('API is running...');
@@ -40,4 +46,5 @@ app.get('/api/supplements/:id', (req, res) => {
   res.json(suppProduct);
 });
 
-app.listen(5000, console.log('Server is running on port 5000'));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, console.log(`Server is running on ${PORT}`.yellow.bold));

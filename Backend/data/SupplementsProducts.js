@@ -79,4 +79,4 @@ const supplementsProducts = [
   },
 ];
 
-module.exports = supplementsProducts;
+export default supplementsProducts;

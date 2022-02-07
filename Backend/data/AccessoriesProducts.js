@@ -79,4 +79,4 @@ const accessoriesProducts = [
   },
 ];
 
-module.exports = accessoriesProducts;
+export default accessoriesProducts;
