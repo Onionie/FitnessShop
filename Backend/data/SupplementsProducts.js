@@ -1,6 +1,5 @@
 const supplementsProducts = [
   {
-    _id: '1',
     name: 'Gold Standard Whey Protein',
     image: '/images/suppPage/supp1.jpg',
     description:
@@ -13,7 +12,6 @@ const supplementsProducts = [
     numReviews: 14,
   },
   {
-    _id: '2',
     name: 'Signature Whey Protein Powder',
     image: '/images/suppPage/supp2.jpg',
     description:
@@ -26,7 +24,6 @@ const supplementsProducts = [
     numReviews: 9,
   },
   {
-    _id: '3',
     name: 'Evlution Shred Pre Workout',
     image: '/images/suppPage/supp3.jpg',
     description:
@@ -39,7 +36,6 @@ const supplementsProducts = [
     numReviews: 11,
   },
   {
-    _id: '4',
     name: 'Gold Standard Pre Workout',
     image: '/images/suppPage/supp4.jpg',
     description:
@@ -52,7 +48,6 @@ const supplementsProducts = [
     numReviews: 9,
   },
   {
-    _id: '5',
     name: 'Evlution Weight-Loss Support',
     image: '/images/suppPage/supp5.jpg',
     description:
@@ -65,7 +60,6 @@ const supplementsProducts = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'SuperHD Fat Burner',
     image: '/images/suppPage/supp6.jpg',
     description:

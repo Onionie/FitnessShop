@@ -1,6 +1,5 @@
 const equipmentProducts = [
   {
-    _id: '1',
     name: '150-Pound Dumbbell Set With A-Frame',
     image: '/images/equipmentPage/equipment1.jpg',
     description:
@@ -13,7 +12,6 @@ const equipmentProducts = [
     numReviews: 13,
   },
   {
-    _id: '2',
     name: 'Rubber Hex Coated Dumbbells',
     image: '/images/equipmentPage/equipment2.jpg',
     description:
@@ -26,7 +24,6 @@ const equipmentProducts = [
     numReviews: 9,
   },
   {
-    _id: '3',
     name: 'Power Rack Weight Station',
     image: '/images/equipmentPage/equipment3.jpg',
     description:
@@ -39,7 +36,6 @@ const equipmentProducts = [
     numReviews: 11,
   },
   {
-    _id: '4',
     name: 'Magnetic Indoor Cycling Bike',
     image: '/images/equipmentPage/equipment4.jpg',
     description:
@@ -52,7 +48,6 @@ const equipmentProducts = [
     numReviews: 6,
   },
   {
-    _id: '5',
     name: 'Weight Bench With Leg Trainer',
     image: '/images/equipmentPage/equipment5.jpg',
     description:
@@ -65,7 +60,6 @@ const equipmentProducts = [
     numReviews: 11,
   },
   {
-    _id: '6',
     name: '750R Rowing Machine',
     image: '/images/equipmentPage/equipment6.jpg',
     description:

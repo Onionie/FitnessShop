@@ -1,6 +1,5 @@
 const accessoriesProducts = [
   {
-    _id: '1',
     name: 'Pro-Tec Athletics 3D Wrist Sleeve',
     image: '/images/accPage/acc1.jpg',
     description:
@@ -13,7 +12,6 @@ const accessoriesProducts = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'Wrist Wraps',
     image: '/images/accPage/acc2.jpg',
     description:
@@ -26,7 +24,6 @@ const accessoriesProducts = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Bear Komplex Lifting Straps',
     image: '/images/accPage/acc3.jpg',
     description:
@@ -39,7 +36,6 @@ const accessoriesProducts = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'Neosprene Knee Sleeves',
     image: '/images/accPage/acc4.jpg',
     description:
@@ -52,7 +48,6 @@ const accessoriesProducts = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'Elbow Sleeves',
     image: '/images/accPage/acc5.jpg',
     description:
@@ -65,7 +60,6 @@ const accessoriesProducts = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'Super Air Face Mask',
     image: '/images/accPage/acc6.jpg',
     description:
