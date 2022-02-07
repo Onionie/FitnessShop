@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import ProductsPage from '../components/ProductsPage';
 import supplementsProducts from '../data/SupplementsProducts';
 
-const Equipment = () => {
+const Supplement = () => {
   return (
     <Row>
       {supplementsProducts.map((product) => (
@@ -15,4 +15,4 @@ const Equipment = () => {
   );
 };
 
-export default Equipment;
+export default Supplement;

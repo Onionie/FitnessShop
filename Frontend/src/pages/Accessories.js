@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import ProductsPage from '../components/ProductsPage';
-import accessoriesProducts from '../data/AccessoriesProducts';
+import axios from 'axios';
 
 const HomeScreen = () => {
+  const [accessoriesProducts, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { data } = await axios.get('/api/accessories');
+
+      setProducts(data);
+    };
+
+    fetchProducts();
+  }, []);
+
   return (
     <>
       <Row>
