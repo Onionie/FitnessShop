@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const Header = () => {
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <i
-          class="fas fa-dumbbell fa-2x"
+          className="fas fa-dumbbell fa-2x"
           style={{ color: 'white', margin: '0 10px' }}
         ></i>
         <Link to="/">
