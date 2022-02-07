@@ -9,8 +9,8 @@
     "server": "nodemon Backend/server",
     "client": "npm start --prefix Frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node Backend/dataLoader/accLoader",
-    "data:destroy": "node Backend/dataLoader/accLoader -d"
+    "data:import": "node Backend/dataLoader",
+    "data:destroy": "node Backend/dataLoader -d"
   },
   "repository": {
     "type": "git",

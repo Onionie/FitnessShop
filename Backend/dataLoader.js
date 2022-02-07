@@ -1,12 +1,12 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import colors from 'colors';
-import users from '../data/users.js';
-import products from '../data/AccessoriesProducts.js';
-import User from '../dataModels/userModel.js';
-import Product from '../dataModels/productModel.js';
-import Order from '../dataModels/orderModel.js';
-import connectDB from '../config/db.js';
+import users from './data/users.js';
+import products from './data/allProducts.js';
+import User from './dataModels/userModel.js';
+import Product from './dataModels/productModel.js';
+import Order from './dataModels/orderModel.js';
+import connectDB from './config/db.js';
 
 dotenv.config();
 
