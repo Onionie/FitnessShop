@@ -5,6 +5,7 @@ import colors from 'colors';
 import connectDB from './config/db.js';
 import allProducts from './data/allProducts.js';
 import productRoutes from './routing/productRouting.js';
+import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 dotenv.config();
 connectDB();
@@ -25,6 +26,10 @@ app.use('/api/products', productRoutes);
 //   const accProduct = accessoriesProducts.find((p) => p._id === req.params.id);
 //   res.json(accProduct);
 // });
+
+// Throw Errors when accessing invalid routes
+app.use(notFound);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`Server is running on ${PORT}`.yellow.bold));
