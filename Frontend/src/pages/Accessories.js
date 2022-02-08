@@ -8,9 +8,10 @@ const HomeScreen = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const { data } = await axios.get('/api/accessories');
+      const { data } = await axios.get('/api/products');
+      const newAccessories = data.filter((p) => p.category === 'accessories');
 
-      setProducts(data);
+      setProducts(newAccessories);
     };
 
     fetchProducts();
