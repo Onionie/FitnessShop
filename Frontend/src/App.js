@@ -19,8 +19,10 @@ function App() {
             <Route path="/" element={<Home />} exact />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/equipment" element={<Equipment />} />
-            <Route path="/supplements" element={<Supplements />} />
+            <Route path="/supplement" element={<Supplements />} />
             <Route path="/accessories/:id" element={<SpecificProduct />} />
+            <Route path="/equipment/:id" element={<SpecificProduct />} />
+            <Route path="/supplement/:id" element={<SpecificProduct />} />
           </Routes>
         </Container>
       </main>

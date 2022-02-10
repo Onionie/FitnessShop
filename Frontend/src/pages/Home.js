@@ -20,7 +20,7 @@ function Home() {
         className="text-center"
         src="/images/homePage/home_supps.jpg"
         title="Supplements"
-        link="/supplements"
+        link="/supplement"
       />
     </Row>
   );

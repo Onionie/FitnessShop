@@ -1,13 +1,24 @@
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap';
 import Rating from '../components/Rating';
-import accessoriesProducts from '../data/AccessoriesProducts';
+import axios from 'axios';
 import './pages.css';
 
 const SpecificProduct = () => {
   const params = useParams();
-  const product = accessoriesProducts.find((p) => p._id === params.id);
+  //const product = accessoriesProducts.find((p) => p._id === params.id);
 
+  const [product, setProduct] = useState([]);
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { data } = await axios.get(`/api/products/${params.id}`);
+
+      setProduct(data);
+    };
+
+    fetchProducts();
+  }, []);
   return (
     <div>
       <Link className="btn btn-dark my-3" to="/accessories">
