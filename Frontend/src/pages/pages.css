@@ -8,3 +8,7 @@
 .top {
   align-items: start;
 }
+
+a {
+  text-decoration: none;
+}
