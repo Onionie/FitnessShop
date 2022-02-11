@@ -5,15 +5,16 @@ import {
   PRODUCT_LIST_FAIL,
 } from '../constants/productConstants';
 
-export const listProducts = () => async (dispatch) => {
+export const listAccessories = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST });
 
     const { data } = await axios.get(`/api/products`);
+    const accessoriesData = data.filter((p) => p.category === 'accessories');
 
     dispatch({
       type: PRODUCT_LIST_SUCCESS,
-      payload: data,
+      payload: accessoriesData,
     });
   } catch (error) {
     dispatch({
