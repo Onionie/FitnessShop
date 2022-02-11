@@ -8,6 +8,7 @@ import Accessories from './pages/Accessories';
 import Equipment from './pages/Equipment';
 import Supplements from './pages/Supplements';
 import SpecificProduct from './pages/SpecificProduct.js';
+import Cart from './screens/Cart';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
             <Route path="/accessories/:id" element={<SpecificProduct />} />
             <Route path="/equipment/:id" element={<SpecificProduct />} />
             <Route path="/supplement/:id" element={<SpecificProduct />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart:id" element={<Cart />} />
           </Routes>
         </Container>
       </main>
