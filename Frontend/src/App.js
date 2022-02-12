@@ -8,7 +8,7 @@ import Accessories from './pages/Accessories';
 import Equipment from './pages/Equipment';
 import Supplements from './pages/Supplements';
 import SpecificProduct from './pages/SpecificProduct.js';
-import Cart from './screens/Cart';
+import Cart from './pages/Cart.js';
 
 function App() {
   return (
