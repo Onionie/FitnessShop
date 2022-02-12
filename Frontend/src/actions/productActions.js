@@ -54,6 +54,29 @@ export const listEquipment = () => async (dispatch) => {
   }
 };
 
+// Renders Equipment Products
+export const listSupplements = () => async (dispatch) => {
+  try {
+    dispatch({ type: PRODUCT_LIST_REQUEST });
+
+    const { data } = await axios.get(`/api/products`);
+    const supplementData = data.filter((p) => p.category === 'supplement');
+
+    dispatch({
+      type: PRODUCT_LIST_SUCCESS,
+      payload: supplementData,
+    });
+  } catch (error) {
+    dispatch({
+      type: PRODUCT_LIST_FAIL,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    });
+  }
+};
+
 // Renders Specific Product
 export const listProductDetails = (id) => async (dispatch) => {
   try {
