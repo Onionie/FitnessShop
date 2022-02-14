@@ -11,7 +11,7 @@ import {
   Card,
 } from 'react-bootstrap';
 import Message from '../components/Message';
-import { addToCart } from '../actions/cartActions';
+import { addToCart, removeFromCart } from '../actions/cartActions';
 
 import './pages.css';
 
@@ -29,7 +29,7 @@ const Cart = ({ history }) => {
   const { cartItems } = cart;
 
   const removeFromCartHandler = (productId) => {
-    //dispatch(removeFromCart(productId));
+    dispatch(removeFromCart(productId));
   };
 
   const checkOutHandler = () => {
@@ -73,6 +73,7 @@ const Cart = ({ history }) => {
                             addToCart(item.product, Number(e.target.value))
                           );
                         }}
+                        style={{ textAlign: 'center' }}
                       >
                         {[...Array(item.countInStock).keys()].map((x) => (
                           <option key={x + 1} value={x + 1}>
