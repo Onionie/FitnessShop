@@ -12,7 +12,7 @@ const Header = () => {
           style={{ color: 'white', margin: '0 10px' }}
         ></i>
         <Link to="/">
-          <Navbar.Brand>FitnessShop</Navbar.Brand>
+          <Navbar.Brand>eFitness</Navbar.Brand>
         </Link>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
