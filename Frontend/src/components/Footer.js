@@ -6,7 +6,11 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col className="text-center py-5">Copyright &copy; FitnessShop</Col>
+          <Col className="text-center py-5">
+            {/* prettier-ignore */}
+            &copy; eFitness |{' '}
+            <a href="https://github.com/Onionie/eFitness">Oniel Gutierrez</a>
+          </Col>
         </Row>
       </Container>
     </footer>
