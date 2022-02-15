@@ -3,29 +3,24 @@ import dotenv from 'dotenv';
 import colors from 'colors';
 
 import connectDB from './config/db.js';
-import allProducts from './data/allProducts.js';
 import productRoutes from './routing/productRouting.js';
+import userRoutes from './routing/userRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 dotenv.config();
+
 connectDB();
+
 const app = express();
 
-// const accessoriesProducts = allProducts.filter(
-//   (p) => p.category === 'accessories'
-// );
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send('API is running...');
 });
 
 app.use('/api/products', productRoutes);
-
-// Shows specific product
-// app.get('/api/accessories/:id', (req, res) => {
-//   const accProduct = accessoriesProducts.find((p) => p._id === req.params.id);
-//   res.json(accProduct);
-// });
+app.use('/api/users', userRoutes);
 
 // Throw Errors when accessing invalid routes
 app.use(notFound);
