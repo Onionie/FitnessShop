@@ -9,6 +9,7 @@ import Equipment from './pages/Equipment';
 import Supplements from './pages/Supplements';
 import SpecificProduct from './pages/SpecificProduct.js';
 import Cart from './pages/Cart.js';
+import Login from './pages/Login.js';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path=":id" element={<Cart />} />
               <Route path="" element={<Cart />} />
             </Route>
+            <Route path="/login" element={<Login />} />
           </Routes>
         </Container>
       </main>
