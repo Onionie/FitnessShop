@@ -11,6 +11,7 @@ import SpecificProduct from './pages/SpecificProduct.js';
 import Cart from './pages/Cart.js';
 import Login from './pages/Login.js';
 import Register from './pages/Register.js';
+import Profile from './pages/Profile.js';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             </Route>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </Container>
       </main>
