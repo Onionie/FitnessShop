@@ -12,6 +12,7 @@ import Cart from './pages/Cart.js';
 import Login from './pages/Login.js';
 import Register from './pages/Register.js';
 import Profile from './pages/Profile.js';
+import Shipping from './pages/Shipping.js';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/shipping" element={<Shipping />} />
           </Routes>
         </Container>
       </main>
