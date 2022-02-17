@@ -5,6 +5,7 @@ import colors from 'colors';
 import connectDB from './config/db.js';
 import productRoutes from './routing/productRouting.js';
 import userRoutes from './routing/userRoutes.js';
+import orderRoutes from './routing/orderRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 dotenv.config();
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/orders', orderRoutes);
 
 // Throw Errors when accessing invalid routes
 app.use(notFound);
