@@ -14,6 +14,7 @@ import Register from './pages/Register.js';
 import Profile from './pages/Profile.js';
 import Shipping from './pages/Shipping.js';
 import Payment from './pages/Payment.js';
+import PlaceOrder from './pages/PlaceOrder.js';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/shipping" element={<Shipping />} />
             <Route path="/payment" element={<Payment />} />
+            <Route path="/placeorder" element={<PlaceOrder />} />
           </Routes>
         </Container>
       </main>
