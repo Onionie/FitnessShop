@@ -5,7 +5,7 @@ import {
   ORDER_DETAILS_REQUEST,
   ORDER_DETAILS_SUCCESS,
   ORDER_DETAILS_FAIL,
-} from '../constants/orderContants';
+} from '../constants/orderConstants';
 
 export const orderCreateReducer = (state = {}, action) => {
   switch (action.type) {

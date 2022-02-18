@@ -5,7 +5,7 @@ import {
   ORDER_DETAILS_REQUEST,
   ORDER_DETAILS_SUCCESS,
   ORDER_DETAILS_FAIL,
-} from '../constants/orderContants';
+} from '../constants/orderConstants';
 import axios from 'axios';
 
 export const createOrder = (order) => async (dispatch, getState) => {
