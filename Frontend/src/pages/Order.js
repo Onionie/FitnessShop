@@ -100,7 +100,7 @@ const Order = () => {
                           />
                         </Col>
                         <Col>
-                          <Link to={`/products/${item.product}`}>
+                          <Link to={`/${item.category}/${item.product}`}>
                             {item.name}
                           </Link>
                         </Col>

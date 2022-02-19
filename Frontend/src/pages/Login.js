@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams, useLocation, useNavigate } from 'react-router-dom';
+import {
+  Link,
+  useLocation,
+  useNavigate,
+  useSearchParams,
+} from 'react-router-dom';
 import { Form, Button, Row, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -11,6 +16,7 @@ import FormContainer from '../components/FormContainer';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [searchParams] = useSearchParams();
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -18,9 +24,12 @@ const Login = () => {
   const { loading, error, userInfo } = userLogin;
 
   const location = useLocation();
-  const redirect = location.search
-    ? '/' + new URLSearchParams(location.search).get('redirect')
-    : '';
+
+  // const redirect = location.search
+  //   ? '/' + new URLSearchParams(location.search).get('redirect')
+  //   : '';
+
+  const redirect = location.search ? location.search.split('=')[1] : '/';
 
   useEffect(() => {
     if (userInfo) {

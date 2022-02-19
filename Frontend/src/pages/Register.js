@@ -21,15 +21,15 @@ const Register = () => {
   const { loading, error, userInfo } = userRegister;
 
   const location = useLocation();
-  const redirect = location.search
-    ? '/' + new URLSearchParams(location.search).get('redirect')
-    : '';
+  // const redirect = location.search
+  //   ? '/' + new URLSearchParams(location.search).get('redirect')
+  //   : '';
 
-  //const redirect = location.search ? location.search.split('=')[1] : '/';
+  const redirect = location.search ? location.search.split('=')[1] : '/';
 
   useEffect(() => {
     if (userInfo) {
-      navigate('/');
+      navigate(redirect);
     }
   }, [navigate, userInfo, redirect]);
 
@@ -80,7 +80,7 @@ const Register = () => {
         </Form.Group>
 
         <Form.Group controlId="confrimPassword">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Confirm Password</Form.Label>
           <Form.Control
             type="password"
             placeholder="Enter Confrim Password"
@@ -90,7 +90,7 @@ const Register = () => {
         </Form.Group>
 
         <Button type="submit" variant="primary" className="mt-2">
-          Sign In
+          Register
         </Button>
       </Form>
       <Row className="py-3">
