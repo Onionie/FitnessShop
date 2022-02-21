@@ -20,3 +20,9 @@ https://onielg-tripph-react.herokuapp.com/
 - PayPal API
 
 ## Screenshots
+
+<img src = "https://github.com/Onionie/eFitness/blob/main/Frontend/public/Snapshot/1.PNG">
+<img src = "https://github.com/Onionie/eFitness/blob/main/Frontend/public/Snapshot/2.PNG">
+<img src = "https://github.com/Onionie/eFitness/blob/main/Frontend/public/Snapshot/3.PNG">
+<img src = "https://github.com/Onionie/eFitness/blob/main/Frontend/public/Snapshot/4.PNG">
+<img src = "https://github.com/Onionie/eFitness/blob/main/Frontend/public/Snapshot/5.PNG">
