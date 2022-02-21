@@ -4,7 +4,7 @@ A single-page (SPA) e-Commerce website about Fitness products that lets user acc
 
 ## Deployment
 
-https://onielg-tripph-react.herokuapp.com/
+https://onielg-efitness.herokuapp.com/
 
 ## Tools Used
 
