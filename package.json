@@ -1,9 +1,6 @@
 {
-  "name": "eFitness",
+  "name": "efitness",
   "version": "1.0.0",
-  "engines": {
-    "node": "14.18.0"
-  },
   "description": "MERN e-commerce",
   "main": "index.js",
   "type": "module",
