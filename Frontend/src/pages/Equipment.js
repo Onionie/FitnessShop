@@ -24,6 +24,7 @@ const Equipment = () => {
         <Message variant="danger">{error}</Message>
       ) : (
         <Row>
+          <h2>Equipment</h2>
           {products.map((product) => (
             <Col sm={12} md={6} lg={4} xl={4} key={product._id}>
               <ProductsPage product={product} />
