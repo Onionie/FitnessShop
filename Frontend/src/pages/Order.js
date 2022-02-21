@@ -9,6 +9,8 @@ import Loader from '../components/Loader';
 import { getOrderDetails, payOrder } from '../actions/orderActions';
 import { ORDER_PAY_RESET } from '../constants/orderConstants';
 
+import './pages.css';
+
 const Order = () => {
   const dispatch = useDispatch();
 
@@ -72,7 +74,7 @@ const Order = () => {
   ) : (
     <>
       <h1>Order# {order._id}</h1>
-      <Row>
+      <Row className="top">
         <Col md={8}>
           <ListGroup variant="flush">
             <ListGroup.Item>
