@@ -1,6 +1,9 @@
 {
-  "name": "fitnessshop",
+  "name": "eFitness",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.18.0"
+  },
   "description": "MERN e-commerce",
   "main": "index.js",
   "type": "module",
@@ -15,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Onionie/FitnessShop.git"
+    "url": "git+https://github.com/Onionie/eFitness.git"
   },
   "author": "Oniel Gutierrez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Onionie/FitnessShop/issues"
+    "url": "https://github.com/Onionie/eFitness/issues"
   },
-  "homepage": "https://github.com/Onionie/FitnessShop#readme",
+  "homepage": "https://github.com/Onionie/eFitness#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
