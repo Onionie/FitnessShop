@@ -36,7 +36,7 @@ const SpecificProduct = () => {
 
   return (
     <div>
-      <Link className="btn btn-dark my-3" to="/accessories">
+      <Link className="btn btn-dark my-3" to={`/${product.category}`}>
         Go Back
       </Link>
       {loading ? (
