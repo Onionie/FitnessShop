@@ -11,7 +11,12 @@ https://onielg-tripph-react.herokuapp.com/
 - HTML
 - CSS
 - Javascript
-- React.js
+- MongoDB
+- Express
+- React
+- React-Redux
 - React-Bootstrap
+- Node.js
+- PayPal API
 
 ## Screenshots
