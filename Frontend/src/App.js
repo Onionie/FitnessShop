@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 //import Home from './pages/Home.js';
-import Shopnow from './pages/Shopnow.js';
+import Shop from './pages/Shop.js';
 import Accessories from './pages/Accessories';
 import Equipment from './pages/Equipment';
 import Supplements from './pages/Supplements';
@@ -25,7 +25,7 @@ function App() {
       <main className="py-3">
         <Container>
           <Routes>
-            <Route path="/shopnow" element={<Shopnow />} exact />
+            <Route path="/shop" element={<Shop />} exact />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/equipment" element={<Equipment />} />
             <Route path="/supplement" element={<Supplements />} />

@@ -48,7 +48,7 @@ const Cart = ({ history }) => {
         <Col md={8}>
           {cartItems.length === 0 ? (
             <Message>
-              Your cart is empty <Link to="/">Go Back</Link>
+              Your cart is empty. <Link to="/shop"> Shop Now.</Link>
             </Message>
           ) : (
             <ListGroup variant="flush">

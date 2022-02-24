@@ -2,7 +2,7 @@ import { Row } from 'react-bootstrap';
 import HomePageComponent from '../components/HomePageComponent';
 import './pages.css';
 
-function Shopnow() {
+function Shop() {
   return (
     <Row className="row">
       <HomePageComponent
@@ -27,4 +27,4 @@ function Shopnow() {
   );
 }
 
-export default Shopnow;
+export default Shop;
