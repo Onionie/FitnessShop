@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
-//import Home from './pages/Home.js';
+import Home from './pages/Home.js';
 import Shop from './pages/Shop.js';
 import Accessories from './pages/Accessories';
 import Equipment from './pages/Equipment';
@@ -22,6 +22,9 @@ function App() {
   return (
     <Router>
       <Header />
+      <Routes>
+        <Route path="/" element={<Home />} exact />
+      </Routes>
       <main className="py-3">
         <Container>
           <Routes>
