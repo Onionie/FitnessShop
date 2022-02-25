@@ -5,8 +5,7 @@ function Home() {
   return (
     <img
       className="home-background-image"
-      src="/images/homePage/background-image.jpg"
-      alt="background-image"
+      src="/images/shopPage/background-image.jpg"
     ></img>
   );
 }

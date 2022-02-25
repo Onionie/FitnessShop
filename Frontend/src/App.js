@@ -22,12 +22,10 @@ function App() {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} exact />
-      </Routes>
       <main className="py-3">
         <Container>
           <Routes>
+            <Route path="/" element={<Home />} exact />
             <Route path="/shop" element={<Shop />} exact />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/equipment" element={<Equipment />} />

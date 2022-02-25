@@ -7,19 +7,19 @@ function Shop() {
     <Row className="row">
       <HomePageComponent
         className="text-center"
-        src="/images/homePage/home_accessories.jpg"
+        src="/images/shopPage/home_accessories.jpg"
         title="Accessories"
         link="/accessories"
       />
       <HomePageComponent
         className="text-center"
-        src="/images/homePage/home_equipment.jpg"
+        src="/images/shopPage/home_equipment.jpg"
         title="Home Gym Equipment"
         link="/equipment"
       />
       <HomePageComponent
         className="text-center"
-        src="/images/homePage/home_supps.jpg"
+        src="/images/shopPage/home_supps.jpg"
         title="Supplements"
         link="/supplement"
       />
