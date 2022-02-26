@@ -17,3 +17,9 @@ a {
   width: 100%;
   height: auto;
 }
+
+.background-banner {
+  height: 700px;
+  width: 100%;
+  background-color: azure;
+}

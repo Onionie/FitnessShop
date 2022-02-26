@@ -3,10 +3,9 @@ import './pages.css';
 
 function Home() {
   return (
-    <img
-      className="home-background-image"
-      src="/images/shopPage/background-image.jpg"
-    ></img>
+    <div>
+      <div className="background-banner"></div>
+    </div>
   );
 }
 
