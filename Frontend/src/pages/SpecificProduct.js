@@ -9,6 +9,7 @@ import {
   ListGroup,
   Card,
   Button,
+  Container,
 } from 'react-bootstrap';
 //import Rating from '../components/Rating';
 import Loader from '../components/Loader';
@@ -35,7 +36,7 @@ const SpecificProduct = () => {
   };
 
   return (
-    <div>
+    <Container>
       <Link className="btn btn-dark my-3" to={`/${product.category}`}>
         Go Back
       </Link>
@@ -121,7 +122,7 @@ const SpecificProduct = () => {
           </Col>
         </Row>
       )}
-    </div>
+    </Container>
   );
 };
 
