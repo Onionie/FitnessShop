@@ -23,29 +23,27 @@ function App() {
     <Router>
       <Header />
       <main className="py-3">
-        <Container>
-          <Routes>
-            <Route path="/" element={<Home />} exact />
-            <Route path="/shop" element={<Shop />} exact />
-            <Route path="/accessories" element={<Accessories />} />
-            <Route path="/equipment" element={<Equipment />} />
-            <Route path="/supplement" element={<Supplements />} />
-            <Route path="/accessories/:id" element={<SpecificProduct />} />
-            <Route path="/equipment/:id" element={<SpecificProduct />} />
-            <Route path="/supplement/:id" element={<SpecificProduct />} />
-            <Route path="/cart">
-              <Route path=":id" element={<Cart />} />
-              <Route path="" element={<Cart />} />
-            </Route>
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/shipping" element={<Shipping />} />
-            <Route path="/payment" element={<Payment />} />
-            <Route path="/placeorder" element={<PlaceOrder />} />
-            <Route path="/order/:id" element={<Order />} />
-          </Routes>
-        </Container>
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="/shop" element={<Shop />} exact />
+          <Route path="/accessories" element={<Accessories />} />
+          <Route path="/equipment" element={<Equipment />} />
+          <Route path="/supplement" element={<Supplements />} />
+          <Route path="/accessories/:id" element={<SpecificProduct />} />
+          <Route path="/equipment/:id" element={<SpecificProduct />} />
+          <Route path="/supplement/:id" element={<SpecificProduct />} />
+          <Route path="/cart">
+            <Route path=":id" element={<Cart />} />
+            <Route path="" element={<Cart />} />
+          </Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/shipping" element={<Shipping />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/placeorder" element={<PlaceOrder />} />
+          <Route path="/order/:id" element={<Order />} />
+        </Routes>
       </main>
       <Footer />
     </Router>
