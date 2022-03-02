@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Home from './pages/Home.js';
@@ -22,7 +21,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main className="py-3">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/shop" element={<Shop />} exact />
