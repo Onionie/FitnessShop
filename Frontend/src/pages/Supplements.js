@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import ProductsPage from '../components/ProductsPage';
 import Message from '../components/Message';
@@ -23,14 +23,16 @@ const Supplement = () => {
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
-        <Row>
-          <h2>Supplements</h2>
-          {products.map((product) => (
-            <Col sm={12} md={6} lg={4} xl={4} key={product._id}>
-              <ProductsPage product={product} />
-            </Col>
-          ))}
-        </Row>
+        <Container>
+          <Row>
+            <h2>Supplements</h2>
+            {products.map((product) => (
+              <Col sm={12} md={6} lg={4} xl={4} key={product._id}>
+                <ProductsPage product={product} />
+              </Col>
+            ))}
+          </Row>
+        </Container>
       )}
     </>
   );
