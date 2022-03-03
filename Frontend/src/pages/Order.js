@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { PayPalButton } from 'react-paypal-button-v2';
 import { Link, useParams } from 'react-router-dom';
-import { Row, Col, ListGroup, Image, Card } from 'react-bootstrap';
+import { Row, Col, ListGroup, Image, Card, Container } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
@@ -72,7 +72,7 @@ const Order = () => {
   ) : error ? (
     <Message variant="danger">{error}</Message>
   ) : (
-    <>
+    <Container>
       <h1>Order# {order._id}</h1>
       <Row className="top">
         <Col md={8}>
@@ -201,7 +201,7 @@ const Order = () => {
           </Card>
         </Col>
       </Row>
-    </>
+    </Container>
   );
 };
 
