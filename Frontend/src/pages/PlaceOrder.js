@@ -1,10 +1,20 @@
 import React, { useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Row, Col, ListGroup, Image, Card, Button } from 'react-bootstrap';
+import {
+  Row,
+  Col,
+  ListGroup,
+  Image,
+  Card,
+  Button,
+  Container,
+} from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { createOrder } from '../actions/orderActions';
+
+import './pages.css';
 
 const PlaceOrder = () => {
   const dispatch = useDispatch();
@@ -58,9 +68,9 @@ const PlaceOrder = () => {
     );
   };
   return (
-    <>
+    <Container>
       <CheckoutSteps step1 step2 step3 step4 />
-      <Row>
+      <Row className="top">
         <Col md={8}>
           <ListGroup variant="flush">
             <ListGroup.Item>
@@ -163,7 +173,7 @@ const PlaceOrder = () => {
           </Card>
         </Col>
       </Row>
-    </>
+    </Container>
   );
 };
 
