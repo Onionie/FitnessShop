@@ -9,6 +9,7 @@ import {
   Form,
   Button,
   Card,
+  Container,
 } from 'react-bootstrap';
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../actions/cartActions';
@@ -42,7 +43,7 @@ const Cart = ({ history }) => {
     }
   }, [dispatch, productId, qty]);
   return (
-    <>
+    <Container>
       <h1 className="row">Shopping Cart</h1>
       <Row className="top">
         <Col md={8}>
@@ -124,7 +125,7 @@ const Cart = ({ history }) => {
           </Card>
         </Col>
       </Row>
-    </>
+    </Container>
   );
 };
 
