@@ -16,19 +16,13 @@
   row-gap: 9.6rem;
 }
 
-.heading-primary {
-  font-weight: 700;
-  font-size: 6.2rem;
-}
-
 /* Hero Section */
 .section-hero {
-  background-color: #7d838d;
+  background-color: #f1f1f1;
   padding: 4rem 0 9.6rem 0;
 }
 
 .hero {
-  background-color: yellow;
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
@@ -39,12 +33,19 @@
 }
 
 .hero-text-box {
-  background-color: aqua;
   padding-left: 5.2rem;
 }
 
-.hero-image-div {
-  background-color: red;
+.heading-primary {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 4.8rem;
 }
 
 .hero-image {
