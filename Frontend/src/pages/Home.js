@@ -1,29 +1,30 @@
-import { Col, Container, Image, Row } from 'react-bootstrap';
-import './pages.css';
+import './Home.style.css';
 
 function Home() {
   return (
-    <>
-      <div className="background-banner">
-        <Container className="row" style={{ marginTop: '0' }}>
-          <Row>
-            <Col className="header-text" md={12} lg={6}>
-              Text about page
-            </Col>
-            <Col md={12} lg={6}>
-              <Image
-                src="./images/homePage/header-image.png"
-                className="header-image"
-                fluid
-              />
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <Container>
-        <h1>Something</h1>
-      </Container>
-    </>
+    <main>
+      <section className="section-hero">
+        <div className="hero">
+          <div className="hero-text-box">
+            <h1 className="heading-primary">Train Hard</h1>
+            <p>
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not
+              only five centurie
+            </p>
+          </div>
+          <div className="hero-image-div">
+            <img
+              src="./images/homePage/header-image.png"
+              className="hero-image"
+              alt="People working out"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
 

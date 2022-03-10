@@ -12,17 +12,3 @@
 a {
   text-decoration: none;
 }
-
-.header-image {
-  background-color: red;
-}
-
-.header-text {
-  background-color: blue;
-}
-
-.background-banner {
-  height: 700px;
-  width: 100%;
-  background-color: #7d838d;
-}

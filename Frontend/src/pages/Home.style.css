@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 6.2rem;
+}
+
+/* Hero Section */
+.section-hero {
+  background-color: #7d838d;
+  padding: 4rem 0 9.6rem 0;
+}
+
+.hero {
+  background-color: yellow;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6;
+  align-items: center;
+}
+
+.hero-text-box {
+  background-color: aqua;
+  padding-left: 5.2rem;
+}
+
+.hero-image-div {
+  background-color: red;
+}
+
+.hero-image {
+  width: 100%;
+}
