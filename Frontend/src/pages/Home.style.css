@@ -40,12 +40,18 @@
   font-weight: 700;
   font-size: 3.5rem;
   line-height: 1.1;
+  margin-bottom: 1rem;
 }
 
 .hero-description {
   font-size: 1.2rem;
   line-height: 1.4;
   margin-bottom: 4.8rem;
+}
+
+.hero-btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
 }
 
 .hero-image {

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Home.style.css';
 
 function Home() {
@@ -14,6 +15,9 @@ function Home() {
               We offer trusted brands that are very popular and will help you
               meet your fitness goals.
             </p>
+            <Link to={`/shop`} className="btn btn-dark my-3 hero-btn">
+              Shop Now
+            </Link>
           </div>
           <div className="hero-image-div">
             <img
