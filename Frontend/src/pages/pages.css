@@ -12,3 +12,11 @@
 a {
   text-decoration: none;
 }
+
+.brand-title {
+  font-size: 2rem;
+}
+
+.nav-links {
+  font-size: 1.2rem;
+}

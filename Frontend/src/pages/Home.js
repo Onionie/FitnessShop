@@ -19,7 +19,7 @@ function Home() {
               Shop Now
             </Link>
             <a
-              href="#highlight"
+              href="#featured"
               className="btn my-3 btn-outline-dark hero-btn-outline"
             >
               Learn More &darr;
@@ -35,10 +35,10 @@ function Home() {
         </div>
       </section>
 
-      <section className="section-featured-brands">
-        <div class="container">
-          <h2 class="heading-featured-in">FEATURED BRANDS</h2>
-          <div class="logos">
+      <section className="section-featured-brands" id="featured">
+        <div className="container">
+          <h2 className="heading-featured-in">FEATURED BRANDS</h2>
+          <div className="logos">
             <img
               src="https://www.bodybuilding.com/images/2021/november/Signature.jpg"
               alt="Bodybuilding-logo"
@@ -55,7 +55,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="section-highlight" id="highlight">
+      <section className="section-highlight">
         <div className="highlight">
           <div className="highlight-image">
             <img
@@ -70,12 +70,12 @@ function Home() {
                 Protein Shakes | 20+ grams of protein per serving
               </li>
               <li>
-                <i class="fa-solid fa-fire"></i>
+                <i className="fa-solid fa-fire"></i>
                 Fat Burners | burns fat, while supporting your appetite and
                 metabolism
               </li>
               <li>
-                <i class="fa-solid fa-bolt"></i>Pre-workouts | boosts your
+                <i className="fa-solid fa-bolt"></i>Pre-workouts | boosts your
                 performance, power and focus.
               </li>
             </ul>

@@ -20,13 +20,17 @@ const Header = () => {
           style={{ color: 'white', margin: '0 10px' }}
         ></i>
         <Link to="/">
-          <Navbar.Brand>eFitness</Navbar.Brand>
+          <Navbar.Brand className="brand-title">eFitness</Navbar.Brand>
         </Link>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <NavDropdown title="Shop" id="basic-nav-dropdown">
+            <NavDropdown
+              className="nav-links"
+              title="Shop"
+              id="basic-nav-dropdown"
+            >
               <NavDropdown.Item as={Link} to="/accessories">
                 Accessories
               </NavDropdown.Item>
@@ -37,11 +41,15 @@ const Header = () => {
                 Supplements
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/cart">
+            <Nav.Link className="nav-links" as={Link} to="/cart">
               <i className="fas fa-shopping-cart"></i> Cart
             </Nav.Link>
             {userInfo ? (
-              <NavDropdown title={userInfo.name} id="username">
+              <NavDropdown
+                className="nav-links"
+                title={userInfo.name}
+                id="username"
+              >
                 <NavDropdown.Item as={Link} to="/profile">
                   Profile
                 </NavDropdown.Item>
@@ -50,7 +58,7 @@ const Header = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             ) : (
-              <Nav.Link as={Link} to="/login">
+              <Nav.Link className="nav-links" as={Link} to="/login">
                 <i className="fas fa-shopping-user"></i>Sign In
               </Nav.Link>
             )}
