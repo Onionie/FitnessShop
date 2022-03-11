@@ -114,7 +114,7 @@ const Cart = ({ history }) => {
               <ListGroup.Item>
                 <Button
                   type="button"
-                  className="btn-block"
+                  className="btn-block btn btn-dark"
                   disabled={cartItems.length === 0}
                   onClick={checkOutHandler}
                 >

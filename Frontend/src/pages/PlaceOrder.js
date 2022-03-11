@@ -162,7 +162,7 @@ const PlaceOrder = () => {
               <ListGroup.Item>
                 <Button
                   type="button"
-                  className="btn btn-block"
+                  className="btn btn-block btn-dark"
                   disabled={cart.cartItems.length === 0}
                   onClick={placeholderHandler}
                 >

@@ -55,7 +55,7 @@ const Payment = () => {
           </Col>
         </Form.Group>
 
-        <Button type="submit" className="mt-3" variant="primary">
+        <Button type="submit" className="mt-3 btn btn-dark" variant="primary">
           Continue
         </Button>
       </Form>

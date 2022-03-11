@@ -110,7 +110,7 @@ const SpecificProduct = () => {
                 <ListGroup.Item>
                   <Button
                     onClick={addToCartHandler}
-                    className="btn-block"
+                    className="btn-block btn btn-dark"
                     type="button"
                     disabled={product.countInStock === 0}
                   >
