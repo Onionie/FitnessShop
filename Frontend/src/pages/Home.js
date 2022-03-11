@@ -82,6 +82,14 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section className="section-products">
+        <div className="products hcontainer">
+          <div className="products-text-box">
+            <h2>PRODUCTS WE CARRY</h2>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
