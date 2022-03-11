@@ -19,7 +19,7 @@
 /* Hero Section */
 .section-hero {
   background-color: #f1f1f1;
-  padding: 4rem 0 9.6rem 0;
+  padding: 4rem 0 5.6rem 0;
 }
 
 .hero {
@@ -49,11 +49,41 @@
   margin-bottom: 4.8rem;
 }
 
-.hero-btn {
+.hero-btn-full,
+.hero-btn-outline {
   padding: 0.7rem 1.5rem;
   font-size: 1.2rem;
 }
 
+.hero-btn-full {
+  margin-right: 1.2rem;
+}
+
 .hero-image {
   width: 100%;
+}
+
+/* Highlight Section */
+.section-highlight {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.highlight {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 22rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.highlight-image {
+  width: 32rem;
+  box-shadow: #000;
+}
+
+.highlight-image img {
+  width: 100%;
+  stroke: red;
 }

@@ -15,9 +15,15 @@ function Home() {
               We offer trusted brands that are very popular and will help you
               meet your fitness goals.
             </p>
-            <Link to={`/shop`} className="btn btn-dark my-3 hero-btn">
+            <Link to={`/shop`} className="btn btn-dark my-3 hero-btn-full">
               Shop Now
             </Link>
+            <a
+              href="#highlight"
+              className="btn my-3 btn-outline-dark hero-btn-outline"
+            >
+              Learn More &darr;
+            </a>
           </div>
           <div className="hero-image-div">
             <img
@@ -25,6 +31,23 @@ function Home() {
               className="hero-image"
               alt="People working out"
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="section-highlight" id="highlight">
+        <div className="highlight">
+          <div className="highlight-image">
+            <img
+              src="./images/homePage/feature-image.png"
+              alt="supplements-all"
+            ></img>
+          </div>
+          <div className="highlight-text-box">
+            <ul>
+              <li>test 1</li>
+              <li>test 2</li>
+            </ul>
           </div>
         </div>
       </section>
