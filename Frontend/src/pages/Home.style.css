@@ -159,6 +159,10 @@
   max-width: 100%;
 }
 
+.type-content {
+  position: relative;
+}
+
 .type-tags {
   font-weight: 500;
   font-size: 1.8rem;
@@ -181,4 +185,12 @@
 
 .type-attribute i {
   margin-right: 0.7rem;
+}
+
+.product-button {
+  text-align: center;
+}
+
+.product-main-button {
+  font-size: 1.2rem;
 }

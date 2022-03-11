@@ -99,24 +99,34 @@ function Home() {
                 </div>
                 <ul class="type-attributes">
                   <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Wrist Sleeves
+                    <i class="fa-solid fa-check"></i>Pro-Tec Athletics Wrist
+                    Sleeves
                   </li>
                   <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Wrist Wraps
+                    <i class="fa-solid fa-check"></i>Bodybuilding Signature
+                    Wrist Wraps
                   </li>
                   <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Lifting Straps
+                    <i class="fa-solid fa-check"></i>Bear Komplex Lifting Straps
                   </li>
                   <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Knee Sleeves
+                    <i class="fa-solid fa-check"></i>Bear Komplex Knee Sleeves
                   </li>
                   <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Elbow Sleeves
+                    <i class="fa-solid fa-check"></i>Bear Komplex Elbow Sleeves
                   </li>
                   <li class="type-attribute">
                     <i class="fa-solid fa-check"></i>Face Mask
                   </li>
                 </ul>
+                <div className="product-button">
+                  <Link
+                    to={`/accessories`}
+                    className="btn btn-light my-3 product-main-button"
+                  >
+                    Shop Accessories
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="type">
@@ -153,6 +163,14 @@ function Home() {
                     <i class="fa-solid fa-dumbbell"></i>750R Rowing Machine
                   </li>
                 </ul>
+                <div className="product-button">
+                  <Link
+                    to={`/equipment`}
+                    className="btn btn-light my-3 product-main-button"
+                  >
+                    Shop Equipment
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="type">
@@ -183,6 +201,14 @@ function Home() {
                     <i class="fa-solid fa-check"></i>SuperHD Fat Burner
                   </li>
                 </ul>
+                <div className="product-button">
+                  <Link
+                    to={`/supplement`}
+                    className="btn btn-light my-3 product-main-button"
+                  >
+                    Shop Supplements
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
