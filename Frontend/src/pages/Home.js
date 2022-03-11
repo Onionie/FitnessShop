@@ -35,6 +35,26 @@ function Home() {
         </div>
       </section>
 
+      <section className="section-featured-brands">
+        <div class="container">
+          <h2 class="heading-featured-in">FEATURED BRANDS</h2>
+          <div class="logos">
+            <img
+              src="https://www.bodybuilding.com/images/2021/november/Signature.jpg"
+              alt="Bodybuilding-logo"
+            />
+            <img
+              src="https://www.bodybuilding.com/images/2021/november/EVL.jpg"
+              alt="EVL-logo"
+            />
+            <img
+              src="https://www.bodybuilding.com/images/2021/november/Optimum-Nutrition.jpg"
+              alt="Optimum Nutrition-logo"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="section-highlight" id="highlight">
         <div className="highlight">
           <div className="highlight-image">
