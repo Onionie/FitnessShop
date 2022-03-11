@@ -3,7 +3,7 @@ import './Home.style.css';
 
 function Home() {
   return (
-    <main>
+    <div>
       <section className="section-hero">
         <div className="hero">
           <div className="hero-text-box">
@@ -76,7 +76,7 @@ function Home() {
               </li>
               <li>
                 <i className="fa-solid fa-bolt"></i>Pre-workouts | boosts your
-                performance, power and focus.
+                energy, performance, power and focus.
               </li>
             </ul>
           </div>
@@ -95,47 +95,26 @@ function Home() {
 
               <div class="type-content">
                 <div class="type-tags">
-                  <span class="tag tag--vegetarian">Accessories</span>
+                  <span class="tag">Accessories</span>
                 </div>
                 <ul class="type-attributes">
                   <li class="type-attribute">
-                    <ion-icon class="type-icon" name="flame-outline"></ion-icon>
-                  </li>
-                  Wrist Sleeve
-                  <li class="type-attribute">
-                    <ion-icon
-                      class="type-icon"
-                      name="restaurant-outline"
-                    ></ion-icon>
-                    Wrist Wraps
+                    <i class="fa-solid fa-check"></i>Wrist Sleeves
                   </li>
                   <li class="type-attribute">
-                    <ion-icon
-                      class="type-icon"
-                      name="restaurant-outline"
-                    ></ion-icon>
-                    Lifting Straps
+                    <i class="fa-solid fa-check"></i>Wrist Wraps
                   </li>
                   <li class="type-attribute">
-                    <ion-icon
-                      class="type-icon"
-                      name="restaurant-outline"
-                    ></ion-icon>
-                    Knee Sleevs
+                    <i class="fa-solid fa-check"></i>Lifting Straps
                   </li>
                   <li class="type-attribute">
-                    <ion-icon
-                      class="type-icon"
-                      name="restaurant-outline"
-                    ></ion-icon>
-                    Elbow Sleeves
+                    <i class="fa-solid fa-check"></i>Knee Sleeves
                   </li>
                   <li class="type-attribute">
-                    <ion-icon
-                      class="type-icon"
-                      name="restaurant-outline"
-                    ></ion-icon>
-                    Face Mask
+                    <i class="fa-solid fa-check"></i>Elbow Sleeves
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-check"></i>Face Mask
                   </li>
                 </ul>
               </div>
@@ -145,14 +124,71 @@ function Home() {
                 src="./images/equipmentPage/equipment4.jpg"
                 alt="indoor-bicycle"
               ></img>
+              <div class="type-content">
+                <div class="type-tags">
+                  <span class="tag">Equipment</span>
+                </div>
+                <ul class="type-attributes">
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-dumbbell"></i>Rubber Hex Coated
+                    Dumbbells
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-dumbbell"></i>Dumbbell Set with
+                    A-Frame
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-dumbbell"></i>Power Rack Weight
+                    Station
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-dumbbell"></i>Magnetic Indoor Cycling
+                    Bike
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-dumbbell"></i>Weight Bench with Leg
+                    Trainer
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-dumbbell"></i>750R Rowing Machine
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="type">
               <img src="./images/suppPage/supp1.jpg" alt="Whey-protein"></img>
+              <div class="type-content">
+                <div class="type-tags">
+                  <span class="tag">Supplements</span>
+                </div>
+                <ul class="type-attributes">
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-check"></i>Gold Standard Whey Protein
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-check"></i>Signature Whey Protein
+                    Powder
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-check"></i>Evlution Shred Pre Workout
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-check"></i>Gold Standard Pre Workout
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-check"></i>Evlution Weight Loss
+                    Support
+                  </li>
+                  <li class="type-attribute">
+                    <i class="fa-solid fa-check"></i>SuperHD Fat Burner
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 
