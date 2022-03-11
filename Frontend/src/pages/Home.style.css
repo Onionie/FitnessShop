@@ -65,13 +65,13 @@
 
 /* Highlight Section */
 .section-highlight {
-  padding: 4.8rem 0 3.2rem 0;
+  margin-top: 2rem;
+  padding: 6.2rem 0 3.2rem 0;
 }
 
 .highlight {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 22rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
@@ -80,10 +80,11 @@
 
 .highlight-image {
   width: 32rem;
-  box-shadow: #000;
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 0 2rem 2.8rem rgba(0, 0, 0, 0.2);
+  justify-self: end;
 }
 
 .highlight-image img {
   width: 100%;
-  stroke: red;
 }
