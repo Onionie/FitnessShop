@@ -90,6 +90,7 @@
 /* Highlight Section */
 .section-highlight {
   padding: 6.2rem 0 3.2rem 0;
+  margin-bottom: 8.2rem;
 }
 
 .highlight {
@@ -124,18 +125,18 @@
 
 /* Products Section */
 .section-products {
-  margin-top: 6rem;
-  padding: 5.2rem 0 3.2rem 0;
+  padding: 3.5rem 0 3.2rem 0;
   background-color: #dee2e6;
 }
 
 .products {
-  padding: 2rem 1.2rem;
+  padding: 0 1.2rem 3rem 1.2rem;
 }
 
 .products-text-box {
   text-align: center;
-  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 4rem;
 }
 
 .products-container {
@@ -143,7 +144,7 @@
 }
 
 .type {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: all 0.4s;
   background-color: #212529;
@@ -152,7 +153,7 @@
 
 .type:hover {
   transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
 }
 
 .type img {
@@ -189,6 +190,7 @@
 
 .product-button {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .product-main-button {
