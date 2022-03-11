@@ -93,32 +93,49 @@ function Home() {
             <div className="type">
               <img src="./images/accPage/acc3.jpg" alt="Wrist-wraps"></img>
 
-              <div class="meal-content">
-                <div class="meal-tags">
-                  <span class="tag tag--vegetarian">Vegetarian</span>
+              <div class="type-content">
+                <div class="type-tags">
+                  <span class="tag tag--vegetarian">Accessories</span>
                 </div>
-                <p class="meal-title">Japanese Gyozas</p>
-                <ul class="meal-attributes">
-                  <li class="meal-attribute">
-                    <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
-                    <span>
-                      <strong>650</strong> calories
-                    </span>
+                <ul class="type-attributes">
+                  <li class="type-attribute">
+                    <ion-icon class="type-icon" name="flame-outline"></ion-icon>
                   </li>
-                  <li class="meal-attribute">
+                  Wrist Sleeve
+                  <li class="type-attribute">
                     <ion-icon
-                      class="meal-icon"
+                      class="type-icon"
                       name="restaurant-outline"
                     ></ion-icon>
-                    <span>
-                      NutriScore &reg; <strong>74</strong>
-                    </span>
+                    Wrist Wraps
                   </li>
-                  <li class="meal-attribute">
-                    <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                    <span>
-                      <strong>4.9</strong> rating (537)
-                    </span>
+                  <li class="type-attribute">
+                    <ion-icon
+                      class="type-icon"
+                      name="restaurant-outline"
+                    ></ion-icon>
+                    Lifting Straps
+                  </li>
+                  <li class="type-attribute">
+                    <ion-icon
+                      class="type-icon"
+                      name="restaurant-outline"
+                    ></ion-icon>
+                    Knee Sleevs
+                  </li>
+                  <li class="type-attribute">
+                    <ion-icon
+                      class="type-icon"
+                      name="restaurant-outline"
+                    ></ion-icon>
+                    Elbow Sleeves
+                  </li>
+                  <li class="type-attribute">
+                    <ion-icon
+                      class="type-icon"
+                      name="restaurant-outline"
+                    ></ion-icon>
+                    Face Mask
                   </li>
                 </ul>
               </div>
