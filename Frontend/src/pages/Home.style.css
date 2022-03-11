@@ -8,7 +8,6 @@
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-  background-color: red;
 }
 
 .grid {
@@ -94,7 +93,6 @@
 }
 
 .highlight {
-  max-width: 130rem;
   margin: 0 auto;
   padding: 0 2rem;
   display: grid;
@@ -125,6 +123,32 @@
 }
 
 /* Products Section */
+.section-products {
+  margin-top: 6rem;
+  padding: 5.2rem 0 3.2rem 0;
+  background-color: #dee2e6;
+}
+
+.products {
+  padding: 2rem 1.2rem;
+}
+
 .products-text-box {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.products-container {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.type {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.type-img {
+  width: 100%;
 }
