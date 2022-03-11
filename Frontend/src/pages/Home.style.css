@@ -88,3 +88,8 @@
 .highlight-image img {
   width: 100%;
 }
+
+.highlight-text-box ul li {
+  margin-bottom: 2rem;
+  list-style: none;
+}

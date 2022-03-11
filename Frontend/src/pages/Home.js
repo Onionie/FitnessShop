@@ -45,8 +45,12 @@ function Home() {
           </div>
           <div className="highlight-text-box">
             <ul>
-              <li>test 1</li>
-              <li>test 2</li>
+              <li> Protein Shakes | 20+ grams of protein per serving</li>
+              <li>
+                Fat Burners | burns fat, while supporting your appetite and
+                metabolism
+              </li>
+              <li> Pre-workouts | boosts your performance, power and focus.</li>
             </ul>
           </div>
         </div>
