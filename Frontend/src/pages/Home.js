@@ -217,28 +217,21 @@ function Home() {
 
       {/* Sub-footer Section */}
       <section className="sub-footer">
-        <div className="container grid footer-grid">
+        <div className="footer-container grid footer-grid">
           <div className="logo-col">
             <Link to="/">
-              <i className="fas fa-dumbbell"></i>
-              eFitness
+              <img src="./images/homePage/efitness-log.png" alt="logo"></img>
             </Link>
 
             <ul class="social-links">
               <li>
-                <a class="footer-link" href="#">
-                  <i class="fa-brands fa-instagram social-icon"></i>
-                </a>
+                <i class="fa-brands fa-instagram social-icon"></i>
               </li>
               <li>
-                <a class="footer-link" href="#">
-                  <i class="fa-brands fa-facebook-square social-icon"></i>
-                </a>
+                <i class="fa-brands fa-facebook-square social-icon"></i>
               </li>
               <li>
-                <a class="footer-link" href="#">
-                  <i class="fa-brands fa-twitter-square social-icon"></i>
-                </a>
+                <i class="fa-brands fa-twitter-square social-icon"></i>
               </li>
             </ul>
           </div>
@@ -249,86 +242,28 @@ function Home() {
                 123 Example St., 1st Floor, San Francisco, CA 94107
               </p>
               <p>
-                <a class="footer-link" href="tel:415-201-6370">
-                  123-456-7890
-                </a>
+                123-456-7890
                 <br />
-                <a class="footer-link" href="mailto:hello@omnifood.com">
-                  email@example.com
-                </a>
+                email@example.com
               </p>
             </address>
           </div>
           <nav class="nav-col">
-            <p class="footer-heading">Account</p>
-            <ul class="footer-nav">
-              <li>
-                <a class="footer-link" href="#">
-                  Create account
-                </a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">
-                  Sign in
-                </a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">
-                  iOS app
-                </a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">
-                  Android app
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <nav class="nav-col">
             <p class="footer-heading">Company</p>
             <ul class="footer-nav">
-              <li>
-                <a class="footer-link" href="#">
-                  About Omnifood
-                </a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">
-                  For Business
-                </a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">
-                  Cooking partners
-                </a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">
-                  Careers
-                </a>
-              </li>
+              <li>About eFitness</li>
+              <li>For Business</li>
+              <li>Cooking partners</li>
+              <li>Careers</li>
             </ul>
           </nav>
 
           <nav class="nav-col">
             <p class="footer-heading">Resources</p>
             <ul class="footer-nav">
-              <li>
-                <a class="footer-link" href="#">
-                  Recipe directory{' '}
-                </a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">
-                  Help center
-                </a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">
-                  Privacy & terms
-                </a>
-              </li>
+              <li>Recipe directory </li>
+              <li>Help center</li>
+              <li>Privacy & terms</li>
             </ul>
           </nav>
         </div>
