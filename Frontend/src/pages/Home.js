@@ -93,30 +93,33 @@ function Home() {
             <div className="type">
               <img src="./images/accPage/acc3.jpg" alt="Wrist-wraps"></img>
 
-              <div class="type-content">
-                <div class="type-tags">
-                  <span class="tag">Accessories</span>
+              <div className="type-content">
+                <div className="type-tags">
+                  <span className="tag">Accessories</span>
                 </div>
-                <ul class="type-attributes">
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Pro-Tec Athletics Wrist
+                <ul className="type-attributes">
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Pro-Tec Athletics Wrist
                     Sleeves
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Bodybuilding Signature
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Bodybuilding Signature
                     Wrist Wraps
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Bear Komplex Lifting Straps
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Bear Komplex Lifting
+                    Straps
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Bear Komplex Knee Sleeves
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Bear Komplex Knee
+                    Sleeves
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Bear Komplex Elbow Sleeves
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Bear Komplex Elbow
+                    Sleeves
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Face Mask
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Face Mask
                   </li>
                 </ul>
                 <div className="product-button">
@@ -134,33 +137,33 @@ function Home() {
                 src="./images/equipmentPage/equipment4.jpg"
                 alt="indoor-bicycle"
               ></img>
-              <div class="type-content">
-                <div class="type-tags">
-                  <span class="tag">Equipment</span>
+              <div className="type-content">
+                <div className="type-tags">
+                  <span className="tag">Equipment</span>
                 </div>
-                <ul class="type-attributes">
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-dumbbell"></i>Rubber Hex Coated
+                <ul className="type-attributes">
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-dumbbell"></i>Rubber Hex Coated
                     Dumbbells
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-dumbbell"></i>Dumbbell Set with
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-dumbbell"></i>Dumbbell Set with
                     A-Frame
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-dumbbell"></i>Power Rack Weight
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-dumbbell"></i>Power Rack Weight
                     Station
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-dumbbell"></i>Magnetic Indoor Cycling
-                    Bike
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-dumbbell"></i>Magnetic Indoor
+                    Cycling Bike
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-dumbbell"></i>Weight Bench with Leg
-                    Trainer
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-dumbbell"></i>Weight Bench with
+                    Leg Trainer
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-dumbbell"></i>750R Rowing Machine
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-dumbbell"></i>750R Rowing Machine
                   </li>
                 </ul>
                 <div className="product-button">
@@ -175,30 +178,33 @@ function Home() {
             </div>
             <div className="type">
               <img src="./images/suppPage/supp1.jpg" alt="Whey-protein"></img>
-              <div class="type-content">
-                <div class="type-tags">
-                  <span class="tag">Supplements</span>
+              <div className="type-content">
+                <div className="type-tags">
+                  <span className="tag">Supplements</span>
                 </div>
-                <ul class="type-attributes">
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Gold Standard Whey Protein
+                <ul className="type-attributes">
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Gold Standard Whey
+                    Protein
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Signature Whey Protein
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Signature Whey Protein
                     Powder
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Evlution Shred Pre Workout
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Evlution Shred Pre
+                    Workout
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Gold Standard Pre Workout
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Gold Standard Pre
+                    Workout
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>Evlution Weight Loss
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>Evlution Weight Loss
                     Support
                   </li>
-                  <li class="type-attribute">
-                    <i class="fa-solid fa-check"></i>SuperHD Fat Burner
+                  <li className="type-attribute">
+                    <i className="fa-solid fa-check"></i>SuperHD Fat Burner
                   </li>
                 </ul>
                 <div className="product-button">
@@ -223,22 +229,22 @@ function Home() {
               <img src="./images/homePage/efitness-log.png" alt="logo"></img>
             </Link>
 
-            <ul class="social-links">
+            <ul className="social-links">
               <li>
-                <i class="fa-brands fa-instagram social-icon"></i>
+                <i className="fa-brands fa-instagram social-icon"></i>
               </li>
               <li>
-                <i class="fa-brands fa-facebook-square social-icon"></i>
+                <i className="fa-brands fa-facebook-square social-icon"></i>
               </li>
               <li>
-                <i class="fa-brands fa-twitter-square social-icon"></i>
+                <i className="fa-brands fa-twitter-square social-icon"></i>
               </li>
             </ul>
           </div>
-          <div class="address-col">
-            <p class="footer-heading">Contact us</p>
-            <address class="contacts">
-              <p class="address">
+          <div className="address-col">
+            <p className="footer-heading">Contact us</p>
+            <address className="contacts">
+              <p className="address">
                 123 Example St., 1st Floor, San Francisco, CA 94107
               </p>
               <p>
@@ -248,20 +254,20 @@ function Home() {
               </p>
             </address>
           </div>
-          <nav class="nav-col">
-            <p class="footer-heading">Company</p>
-            <ul class="footer-nav">
+          <nav className="nav-col">
+            <p className="footer-heading">Company</p>
+            <ul className="footer-nav">
               <li>About eFitness</li>
               <li>For Business</li>
-              <li>Cooking partners</li>
-              <li>Careers</li>
+              <li>Partners</li>
+              <li>Brands</li>
             </ul>
           </nav>
 
-          <nav class="nav-col">
-            <p class="footer-heading">Resources</p>
-            <ul class="footer-nav">
-              <li>Recipe directory </li>
+          <nav className="nav-col">
+            <p className="footer-heading">Resources</p>
+            <ul className="footer-nav">
+              <li>Directory </li>
               <li>Help center</li>
               <li>Privacy & terms</li>
             </ul>
