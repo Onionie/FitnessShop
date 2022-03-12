@@ -38,3 +38,36 @@
     font-size: 1.1rem;
   }
 }
+
+/* 1200px */
+@media (max-width: 75em) {
+  .grid {
+    display: grid;
+    column-gap: 3.4rem;
+    row-gap: 9.6rem;
+  }
+
+  .hero {
+    max-width: 75rem;
+  }
+
+  .logos img {
+    height: 8rem;
+  }
+
+  .heading-primary {
+    font-size: 2.6rem;
+  }
+
+  .highlight {
+    column-gap: 0.8rem;
+  }
+
+  .highlight-text-box ul li {
+    font-size: 1rem;
+  }
+
+  .highlight-image img {
+    width: 80%;
+  }
+}
