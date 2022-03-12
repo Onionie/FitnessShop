@@ -105,7 +105,7 @@
 .highlight-image {
   width: 32rem;
   /* offset-x | offset-y | blur-radius | color */
-  box-shadow: 0 2rem 2.8rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2.8rem rgba(0, 0, 0, 0.08);
   justify-self: end;
 }
 
@@ -135,7 +135,7 @@
 
 .products-text-box {
   text-align: center;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   margin-bottom: 4rem;
 }
 
@@ -196,3 +196,80 @@
 .product-main-button {
   font-size: 1.2rem;
 }
+
+/* sub-footer section */
+.sub-footer {
+  padding-top: 7.2rem;
+}
+
+.footer-grid {
+  padding: 0 3rem;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-col a {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+/* .footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+} */
