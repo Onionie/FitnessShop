@@ -1,0 +1,40 @@
+/* At 1850 width */
+@media (max-width: 115.625em) {
+  .hero {
+    max-width: 115rem;
+  }
+
+  .heading-primary {
+    font-size: 3.4rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* 1520px */
+@media (max-width: 95em) {
+  .hero {
+    max-width: 95rem;
+  }
+
+  .heading-primary {
+    font-size: 2.6rem;
+  }
+}
+
+/* 1440px */
+@media (max-width: 90em) {
+  .hero {
+    max-width: 90rem;
+  }
+
+  .heading-primary {
+    font-size: 2.6rem;
+  }
+
+  .highlight-text-box ul li {
+    font-size: 1.1rem;
+  }
+}
