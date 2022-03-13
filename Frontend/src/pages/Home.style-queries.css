@@ -83,6 +83,10 @@
     font-size: 2.5rem;
   }
 
+  .section-highlight {
+    margin-bottom: 5rem;
+  }
+
   .hero-description {
     font-size: 1rem;
   }
@@ -94,4 +98,8 @@
   .highlight-image img {
     width: 75%;
   }
+}
+
+/* 808 px*/
+@media (max-width: 50.5em) {
 }
