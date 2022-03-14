@@ -22,6 +22,10 @@
 
 /* 1440px */
 @media (max-width: 90em) {
+  .grid {
+    column-gap: 3.4rem;
+  }
+
   .heading-primary {
     font-size: 2.6rem;
   }
@@ -33,12 +37,6 @@
 
 /* 1200px */
 @media (max-width: 75em) {
-  .grid {
-    display: grid;
-    column-gap: 3.4rem;
-    row-gap: 9.6rem;
-  }
-
   .hero {
     padding: 0 3rem;
     column-gap: 2rem;
@@ -66,6 +64,23 @@
 
   .highlight-image {
     width: 80%;
+  }
+
+  .logo-col a {
+    margin-bottom: 0.5rem;
+  }
+
+  .logo-col a img {
+    width: 90%;
+  }
+
+  .social-links {
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-heading {
+    font-size: 1.5rem;
   }
 }
 
