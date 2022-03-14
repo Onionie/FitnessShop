@@ -172,7 +172,56 @@
     padding-top: 3rem;
   }
 
-  .highlight-image img {
-    width: 90%;
+  .highlight {
+    align-items: center;
+  }
+
+  .highlight-image {
+    width: 100%;
+  }
+}
+
+/* 620px */
+
+@media (max-width: 38.75em) {
+  .hero-image {
+    width: 95%;
+  }
+
+  .logos img {
+    height: 4rem;
+  }
+
+  .highlight {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .highlight-image {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .highlight-text-box ul li {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hcontainer {
+    padding: 0 2rem;
+  }
+
+  .type {
+    width: 95%;
+    justify-self: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
   }
 }
