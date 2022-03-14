@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .hcontainer {
   max-width: 90rem;
   margin: 0 auto;
@@ -163,7 +168,7 @@
 }
 
 .type img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .type-tags {

@@ -177,7 +177,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="type">
+            <div className="type supplement">
               <img src="./images/suppPage/supp1.jpg" alt="Whey-protein"></img>
               <div className="type-content">
                 <div className="type-tags">
