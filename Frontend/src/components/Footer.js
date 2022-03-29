@@ -8,7 +8,7 @@ const Footer = () => {
         <Row>
           <Col className="text-center py-5">
             {/* prettier-ignore */}
-            &copy; eFitness |{' '}
+            eFitness |{' '}
             <a href="https://github.com/Onionie/eFitness">Oniel Gutierrez</a>
           </Col>
         </Row>
