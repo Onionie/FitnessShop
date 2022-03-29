@@ -227,7 +227,7 @@ function Home() {
         <div className="footer-container grid footer-grid">
           <div className="logo-col">
             <Link to="/">
-              <img src="./images/homePage/efitness-log.png" alt="logo"></img>
+              <img src="./images/homePage/efitness-log.PNG" alt="logo"></img>
             </Link>
 
             <ul className="social-links">
