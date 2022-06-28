@@ -29,7 +29,9 @@ userSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
 
+// Encrypting password with bcrypt
 userSchema.pre('save', async function (next) {
+  // if password is not modified (email/password can be modified as a feature later on)
   if (!this.isModified('password')) {
     next();
   }

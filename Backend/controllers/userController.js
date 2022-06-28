@@ -9,14 +9,17 @@ import generateToken from '../utils/generateToken.js';
 const authUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
+  // In DB, find email that matches email from the body
   const user = await User.findOne({ email: email });
 
+  // matchPassword is a schema method created in userModel.js
   if (user && (await user.matchPassword(password))) {
     res.json({
       _id: user._id,
       name: user.name,
       email: user.email,
       isAdmin: user.isAdmin,
+      // Need token authorization to access some private routes
       token: generateToken(user._id),
     });
   } else {
@@ -45,9 +48,12 @@ const getUserProfile = asyncHandler(async (req, res) => {
   }
 });
 
+// To register a User
 const registerUser = asyncHandler(async (req, res) => {
+  // get name, email, and password from the body
   const { name, email, password } = req.body;
 
+  // Check if user exists yet
   const userExists = await User.findOne({ email });
 
   if (userExists) {
@@ -55,12 +61,17 @@ const registerUser = asyncHandler(async (req, res) => {
     throw new Error('User already exists');
   }
 
+  // if a user doesn't exist
+  // create a new one using the User model
   const user = await User.create({
     name,
     email,
     password,
   });
+
+  // if user is created
   if (user) {
+    // send this json
     res.status(201).json({
       _id: user._id,
       name: user.name,
@@ -75,7 +86,7 @@ const registerUser = asyncHandler(async (req, res) => {
 });
 
 //@desc Update user profile
-//@route POST /api/users/profile
+//@route PUT /api/users/profile
 //@access Private
 
 const updateUserProfile = asyncHandler(async (req, res) => {

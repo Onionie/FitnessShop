@@ -40,7 +40,10 @@ export const listEquipment = () => async (dispatch) => {
     const equipmentData = data.filter((p) => p.category === 'equipment');
 
     dispatch({
+      // Type is what function we call from the reducer
       type: PRODUCT_LIST_SUCCESS,
+
+      // payload is the data that we send to the reducer
       payload: equipmentData,
     });
   } catch (error) {

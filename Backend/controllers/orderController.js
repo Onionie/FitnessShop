@@ -5,6 +5,7 @@ import Order from '../dataModels/orderModel.js';
 //@route POST /api/orders
 //@access Private
 const addOrderItems = asyncHandler(async (req, res) => {
+  // Get these in from the body
   const {
     orderItems,
     shippingAddress,
@@ -15,10 +16,12 @@ const addOrderItems = asyncHandler(async (req, res) => {
     totalPrice,
   } = req.body;
 
+  // Check if there's an order
   if (orderItems && orderItems.length === 0) {
     res.status(400);
     throw new Error('No order Items');
   } else {
+    // Save order in the database with Order model
     const order = new Order({
       orderItems,
       user: req.user._id,

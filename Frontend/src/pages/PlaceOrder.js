@@ -37,23 +37,27 @@ const PlaceOrder = () => {
   //tax price
   cart.taxPrice = addDecimals(Number((0.15 * cart.itemsPrice).toFixed(2)));
 
+  // total price
   cart.totalPrice = (
     Number(cart.itemsPrice) +
     Number(cart.shippingPrice) +
     Number(cart.taxPrice)
   ).toFixed(2);
 
+  // get state of orderCreate
   const orderCreate = useSelector((state) => state.orderCreate);
 
+  // destructure
   const { order, success, error } = orderCreate;
 
   useEffect(() => {
     if (success) {
       navigate(`/order/${order._id}`);
     }
-    //react-hooks/exhaustive-deps
   }, [dispatch, navigate, success, order]);
 
+  // When user proceeds to Place Order
+  // dispatch createOrder Action and send this data for payload
   const placeholderHandler = () => {
     dispatch(
       createOrder({

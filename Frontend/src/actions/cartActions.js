@@ -22,6 +22,7 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
     },
   });
 
+  // save "carItems" in our local storage by getting the state of our cart and its cartItems
   localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
 };
 
@@ -34,9 +35,11 @@ export const removeFromCart = (id) => async (dispatch, getstate) => {
   localStorage.setItem('cartItems', JSON.stringify(getstate().cart.cartItems));
 };
 
+
 export const saveShippingAddress = (data) => async (dispatch) => {
   dispatch({
     type: CART_SAVE_SHIPPING_ADDRESS,
+    // Sends payload to reducer
     payload: data,
   });
   localStorage.setItem('shippingAddress', JSON.stringify(data));

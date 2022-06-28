@@ -32,6 +32,8 @@ const SpecificProduct = () => {
   }, [dispatch, params.id]);
 
   const addToCartHandler = () => {
+    // Redirects us to /cart/${product.id}/${andQuantity}
+    // The cart page will then take further action
     navigate(`/cart/${params.id}?qty=${qty}`);
   };
 
@@ -94,8 +96,12 @@ const SpecificProduct = () => {
                         <Form.Control
                           as="select"
                           value={qty}
+                          // when there's an event change in our dropdown qty
+                          // setQty state to the target value
                           onChange={(e) => setQty(e.target.value)}
                         >
+                          {/* Gets the number of products in stock and creates
+                        a list of array [0,1,2,3,4] and lists it out */}
                           {[...Array(product.countInStock).keys()].map((x) => (
                             <option key={x + 1} value={x + 1}>
                               {x + 1}

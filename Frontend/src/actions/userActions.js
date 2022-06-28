@@ -28,6 +28,7 @@ export const login = (email, password) => async (dispatch) => {
       },
     };
 
+    // POST to the api (userController.js)
     const { data } = await axios.post(
       '/api/users/login',
       {
@@ -78,6 +79,7 @@ export const register = (name, email, password) => async (dispatch) => {
       },
     };
 
+    // POST a json in the backend /api/users/ to create user (backend userController.js)
     const { data } = await axios.post(
       '/api/users',
       { name, email, password },

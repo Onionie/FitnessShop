@@ -1,13 +1,14 @@
 import asyncHandler from 'express-async-handler';
 import Product from '../dataModels/productModel.js';
 
+// Fetch or list all products
 const getProducts = asyncHandler(async (req, res) => {
   const products = await Product.find({});
 
   res.json(products);
 });
 
-//@desc Fetch single product
+//@desc Fetch single (specific) product
 //@route GET /api/products/:id
 //@access Public
 

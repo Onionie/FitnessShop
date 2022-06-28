@@ -19,6 +19,7 @@ import {
   orderListMyReducer,
 } from './reducers/orderReducer';
 
+// This is where we store our reducers to be used by components
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,

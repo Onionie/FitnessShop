@@ -11,12 +11,15 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 dotenv.config();
 
+// Connect to DB (separate file, cleaner look, call function)
 connectDB();
 
+// To use Express
 const app = express();
 
 app.use(express.json());
 
+// Different routes and corresponding files/functions
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);

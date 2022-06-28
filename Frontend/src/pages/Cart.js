@@ -20,6 +20,8 @@ const Cart = ({ history }) => {
   const params = useParams();
   const navigate = useNavigate();
   const location = useLocation();
+  // Can get params.id by using useParams from react-router-dom
+  // the id or whatever name is in the router App.js
   const productId = params.id;
 
   const qty = Number(new URLSearchParams(location.search).get('qty'));
@@ -29,7 +31,9 @@ const Cart = ({ history }) => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
+  // Takes in productId
   const removeFromCartHandler = (productId) => {
+    // dispatch removeFromCart action with that Id
     dispatch(removeFromCart(productId));
   };
 
@@ -38,7 +42,9 @@ const Cart = ({ history }) => {
   };
 
   useEffect(() => {
+    // if productId exists
     if (productId) {
+      // we can dispatch addToCart action from cartAction
       dispatch(addToCart(productId, qty));
     }
   }, [dispatch, productId, qty]);

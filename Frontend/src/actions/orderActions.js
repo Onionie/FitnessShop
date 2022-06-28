@@ -31,6 +31,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
       },
     };
 
+    // POST method to backend orderController using axios
     const { data } = await axios.post(`/api/orders`, order, config);
 
     dispatch({
