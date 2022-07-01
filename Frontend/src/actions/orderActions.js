@@ -56,6 +56,7 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
     });
 
     const {
+      // get state of userInfo from userLogin in the store
       userLogin: { userInfo },
     } = getState();
 
@@ -65,8 +66,10 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
       },
     };
 
+    // Make a get request from the backend API with the id
     const { data } = await axios.get(`/api/orders/${id}`, config);
 
+    // Save the data from the backend to the payload of frontend
     dispatch({
       type: ORDER_DETAILS_SUCCESS,
       payload: data,
@@ -137,10 +140,12 @@ export const listMyOrders = () => async (dispatch, getState) => {
       },
     };
 
+    // Get our order information from the backend
     const { data } = await axios.get(`/api/orders/myorders`, config);
 
     dispatch({
       type: ORDER_LIST_MY_SUCCESS,
+      // Save that data in our reducer to store it
       payload: data,
     });
   } catch (error) {

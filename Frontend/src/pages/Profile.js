@@ -31,7 +31,9 @@ const Profile = () => {
   const userUpdateProfile = useSelector((state) => state.userUpdateProfile);
   const { success } = userUpdateProfile;
 
+  // Get the state of our orders from orderListMy (store.js)
   const orderListMy = useSelector((state) => state.orderListMy);
+  // Get the state and save it to orders
   const { loading: loadingOrders, error: errorOrders, orders } = orderListMy;
 
   useEffect(() => {
