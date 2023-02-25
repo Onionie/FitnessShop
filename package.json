@@ -8,8 +8,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node Backend/server",
-    "server": "nodemon Backend/server",
+    "start": "node Backend/server.js",
+    "server": "nodemon Backend/server.js",
     "client": "npm start --prefix Frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node Backend/dataLoader",
