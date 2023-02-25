@@ -8,6 +8,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "cd Backend && npm install  && cd ../Frontend && npm install && npm run build",
     "start": "node Backend/server.js",
     "server": "nodemon Backend/server.js",
     "client": "npm start --prefix Frontend",
