@@ -12,7 +12,6 @@ node_modules/
 /coverage
 
 # production
-/Frontend/build
 /Frontend/node_modules
 
 
