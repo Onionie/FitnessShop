@@ -9,8 +9,8 @@
   "type": "module",
   "scripts": {
     "build": "cd Backend && npm install  && cd ../Frontend && npm install && npm run build",
-    "start": "node Backend/server.js",
-    "server": "nodemon Backend/server.js",
+    "start": "node Backend/server",
+    "server": "nodemon Backend/server",
     "client": "npm start --prefix Frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node Backend/dataLoader",
